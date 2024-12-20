@@ -296,19 +296,29 @@ section h2 {
 
 
 
+/* Asegura que el cuerpo ocupe toda la altura de la ventana */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenedor principal */
+.container {
+    flex: 1; /* Ocupa el espacio disponible, empujando el footer al fondo */
+}
+
 /* Estilos para el footer */
 footer {
     position: relative;
     background-color: #282828;
     color: #fff;
-    padding: 20px 0; /* Ajusta el padding superior e inferior */
-    overflow: hidden; /* Asegúrate de que el efecto no se desborde */
-}
-
-/* Asegúrate de que el texto esté encima del efecto */
-footer .container {
-    position: relative;
+    padding: 20px 0;
+    overflow: hidden; /* Evita que las olas se desborden fuera del footer */
     z-index: 2;
+    width: 100%; /* Asegura que el pie de página ocupe todo el ancho */
 }
 
 /* Estilos para el contenedor de las olas */
@@ -319,7 +329,7 @@ footer .container {
     width: 100%;
     height: 120px; /* Ajusta la altura de la ola */
     overflow: hidden;
-    z-index: 1; /* Asegúrate de que el efecto esté detrás del contenido */
+    z-index: 1; /* Las olas deben estar detrás del contenido del footer */
 }
 
 /* Efecto de olas */
@@ -327,7 +337,7 @@ footer .container {
     position: absolute;
     left: 50%;
     width: 200%;
-    height: 100px; /* Por aquí puedo ajustar la altura de la ola */
+    height: 100px; /* Ajusta la altura de la ola */
     background: linear-gradient(to right, rgba(180, 170, 26, 0.893) 0%, rgba(200, 161, 35, 0.938) 50%, rgb(192, 184, 34) 100%);
     border-radius: 50%;
     transform: translateX(-50%);
@@ -340,6 +350,7 @@ footer .container {
     animation: wave 15s linear infinite;
 }
 
+/* Animación de las olas */
 @keyframes wave {
     0% {
         transform: translateX(-50%) translateY(0);
@@ -351,6 +362,26 @@ footer .container {
         transform: translateX(-50%) translateY(0);
     }
 }
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    footer {
+        padding: 15px 0;
+    }
+
+    .wave-container {
+        height: 100px; /* Ajustar la altura de las olas en móviles */
+    }
+
+    .wave {
+        height: 80px; /* Ajustar la altura de la ola */
+    }
+
+    .wave.wave2 {
+        height: 120px;
+    }
+}
+
 
 /* Asegura que la imagen de fondo en .hero se ajuste a la pantalla en dispositivos pequeños */
 .hero-background {
