@@ -533,7 +533,6 @@ body {
     background-image: url('yo.jpg'); /* Ruta de la imagen en la misma carpeta */
     background-size: cover; /* La imagen cubre todo el área sin deformarse */
     background-position: center top; /* Asegura que la imagen se posicione correctamente en la parte superior */
-    background-attachment: fixed; /* Hace que la imagen permanezca fija durante el desplazamiento */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     z-index: -1; /* Coloca la imagen de fondo detrás del contenido */
 }
@@ -543,5 +542,6 @@ body {
     .hero-background {
         background-position: center top; /* Mantiene la imagen alineada en la parte superior */
         background-size: cover; /* La imagen se ajusta al tamaño de la pantalla */
+        background-attachment: scroll; /* Cambiar a scroll para evitar problemas con móviles */
     }
 }
