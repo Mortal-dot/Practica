@@ -232,10 +232,12 @@ section h2 {
     background-color: #050101; /* Fondo negro */
     color: #ffffff; /* Texto blanco */
     text-align: center; /* Centrar texto */
-    padding: 40px; /* Aumenta el espacio alrededor del contenido */
+    padding: 20px 40px 40px; /* Reduce el espacio superior (20px) para mover el contenido hacia arriba */
     height: auto; /* Ajuste automático de la altura según el contenido */
-    min-height: 400px; /* Asegura que la altura sea al menos 400px, pero puede extenderse más si hay más contenido */
+    min-height: 400px; /* Asegura que la altura sea al menos 400px */
+    margin-top: -20px; /* Mueve el contenedor 20px hacia arriba */
 }
+
 
 .social-buttons {
     margin-top: 20px; /* Espacio entre el texto y los botones */
