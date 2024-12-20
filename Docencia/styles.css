@@ -637,21 +637,16 @@ p {
     }
 }
 
-/* Asegura que el header no cubra el contenido */
-.hero {
-    padding-top: 60px; /* Esto asegura que el contenido no quede cubierto por el header fijo */
-}
-
-/* Estilos generales para el encabezado y el menú de navegación */
+/* Estilos generales para el encabezado */
 header {
     position: sticky; /* Hace que el encabezado se quede fijo en la parte superior */
-    top: 0; /* Lo mantiene siempre en la parte superior */
-    width: 100%; /* Asegura que ocupe todo el ancho */
-    background-color: transparent; /* Fondo transparente para no tapar el contenido */
-    z-index: 10; /* Asegura que el encabezado quede por encima de otros elementos */
-    padding: 10px 20px; /* Espaciado en el encabezado */
+    top: 0; /* Asegura que el encabezado siempre esté en la parte superior */
+    width: 100%; /* El encabezado ocupa todo el ancho */
+    background-color: transparent; /* Fondo transparente */
+    z-index: 10; /* Para asegurar que el encabezado quede sobre otros elementos */
+    padding: 10px 20px; /* Espaciado */
     box-shadow: none; /* Elimina cualquier sombra que forme un borde */
-    border: none; /* Elimina cualquier borde */
+    border: none; /* Elimina bordes */
 }
 
 /* Navegación */
@@ -662,6 +657,7 @@ nav ul {
     display: flex; /* Los elementos estarán en una fila */
     justify-content: flex-start; /* Alinea los elementos hacia la izquierda */
     align-items: center; /* Centra los elementos verticalmente */
+    flex-wrap: nowrap; /* Evita que los elementos se apilen en varias líneas */
 }
 
 nav li {
@@ -684,12 +680,12 @@ nav a:hover {
 /* Media Query para pantallas más pequeñas (móviles) */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column; /* Los elementos se apilan en una columna */
-        align-items: center; /* Centra los elementos en la columna */
+        flex-direction: row; /* Mantiene los elementos en una fila */
+        justify-content: center; /* Centra los elementos horizontalmente */
     }
 
     nav li {
-        margin: 10px 0; /* Añade espacio entre los elementos cuando están apilados */
+        margin: 0 10px; /* Aumenta el margen entre los elementos */
     }
 
     nav a {
