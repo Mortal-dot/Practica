@@ -637,28 +637,30 @@ p {
     }
 }
 
-/* Estilos generales para el encabezado y el menú de navegación */
+/* Asegura que el header no cubra el contenido */
 .hero {
-    padding-top: 60px; /* Para evitar que el contenido quede tapado por el header fijo */
+    padding-top: 60px; /* Esto asegura que el contenido no quede cubierto por el header fijo */
 }
 
+/* Estilos generales para el encabezado y el menú de navegación */
 header {
     position: sticky; /* Hace que el encabezado se quede fijo en la parte superior */
     top: 0; /* Lo mantiene siempre en la parte superior */
     width: 100%; /* Asegura que ocupe todo el ancho */
-    background-color: #333; /* Fondo oscuro para el encabezado */
+    background-color: transparent; /* Fondo transparente para no tapar el contenido */
     z-index: 10; /* Asegura que el encabezado quede por encima de otros elementos */
     padding: 10px 20px; /* Espaciado en el encabezado */
-    box-shadow: 0 4px 2px -2px gray; /* Sombra para mejorar la visibilidad */
+    box-shadow: none; /* Sin sombra, para que no se vea un cuadrado */
 }
 
+/* Navegación */
 nav ul {
     list-style: none; /* Elimina los puntos de lista */
     margin: 0;
     padding: 0;
-    display: flex; /* Usa Flexbox para que los elementos estén en fila */
+    display: flex; /* Los elementos estarán en una fila */
     justify-content: flex-start; /* Alinea los elementos hacia la izquierda */
-    flex-wrap: wrap; /* Permite que los elementos se ajusten si es necesario */
+    align-items: center; /* Centra los elementos verticalmente */
 }
 
 nav li {
@@ -681,7 +683,7 @@ nav a:hover {
 /* Media Query para pantallas más pequeñas (móviles) */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column; /* Apila los elementos en una columna */
+        flex-direction: column; /* Los elementos se apilan en una columna */
         align-items: center; /* Centra los elementos en la columna */
     }
 
