@@ -637,3 +637,60 @@ p {
     }
 }
 
+/* Estilos generales para el encabezado y el menú de navegación */
+.hero {
+    padding-top: 60px; /* Para evitar que el contenido quede tapado por el header fijo */
+}
+
+header {
+    position: sticky; /* Hace que el encabezado se quede fijo en la parte superior */
+    top: 0; /* Lo mantiene siempre en la parte superior */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    background-color: #333; /* Fondo oscuro para el encabezado */
+    z-index: 10; /* Asegura que el encabezado quede por encima de otros elementos */
+    padding: 10px 20px; /* Espaciado en el encabezado */
+    box-shadow: 0 4px 2px -2px gray; /* Sombra para mejorar la visibilidad */
+}
+
+nav ul {
+    list-style: none; /* Elimina los puntos de lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Usa Flexbox para que los elementos estén en fila */
+    justify-content: flex-start; /* Alinea los elementos hacia la izquierda */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si es necesario */
+}
+
+nav li {
+    margin-right: 20px; /* Espaciado entre los elementos */
+}
+
+nav a {
+    text-decoration: none;
+    color: white; /* Texto blanco */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold;
+    padding: 5px 10px; /* Espaciado alrededor del texto */
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+nav a:hover {
+    color: #FFD700; /* Color dorado al pasar el mouse por encima */
+}
+
+/* Media Query para pantallas más pequeñas (móviles) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Apila los elementos en una columna */
+        align-items: center; /* Centra los elementos en la columna */
+    }
+
+    nav li {
+        margin: 10px 0; /* Añade espacio entre los elementos cuando están apilados */
+    }
+
+    nav a {
+        font-size: 18px; /* Aumenta el tamaño de la fuente en pantallas pequeñas */
+        padding: 8px 15px; /* Aumenta el área táctil */
+    }
+}
