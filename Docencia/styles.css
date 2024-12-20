@@ -227,12 +227,13 @@ section h2 {
 
 
 
+
 #publicidad {
-    background-color: #000000; /* Fondo negro */
+    background-color: #050101; /* Fondo negro */
     color: #ffffff; /* Texto blanco */
     text-align: center; /* Centrar texto */
-    padding: 40px; /* Espacio alrededor del contenido */
-    height: 500px; /* Altura de la sección, ajusta según necesites */
+    padding: 20px; /* Reduce el espacio alrededor del contenido */
+    height: 300px; /* Ajusta la altura para que sea más pequeña */
 }
 
 .social-buttons {
