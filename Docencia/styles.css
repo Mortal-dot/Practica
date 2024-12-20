@@ -650,7 +650,8 @@ header {
     background-color: transparent; /* Fondo transparente para no tapar el contenido */
     z-index: 10; /* Asegura que el encabezado quede por encima de otros elementos */
     padding: 10px 20px; /* Espaciado en el encabezado */
-    box-shadow: none; /* Sin sombra, para que no se vea un cuadrado */
+    box-shadow: none; /* Elimina cualquier sombra que forme un borde */
+    border: none; /* Elimina cualquier borde */
 }
 
 /* Navegación */
@@ -696,3 +697,4 @@ nav a:hover {
         padding: 8px 15px; /* Aumenta el área táctil */
     }
 }
+
