@@ -714,3 +714,171 @@ body {
         margin-bottom: 10px; /* Espacio entre los botones en la columna */
     }
 }
+
+/* Definir variables para colores y fuentes */
+:root {
+    --primary-color: #FF5722;
+    --secondary-color: #673AB7;
+    --font-family: 'Fira Code', monospace;
+    --font-size-large: 36px;
+    --font-size-medium: 30px;
+    --font-size-small: 24px;
+    --padding: 10px;
+}
+
+/* Restablecer márgenes y rellenos por defecto */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general para el cuerpo */
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Estilo para el contenido de la hero section */
+.hero-content h1,
+.hero-content h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* Estilos para el video de fondo */
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Hero section */
+.hero-content {
+    position: relative;
+    text-align: center;
+    padding: 60px 20px;
+    z-index: 1;
+}
+
+/* Estilo para las imágenes del proyecto */
+.project-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Estilos de los proyectos en grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Estilo para los botones CTA */
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: var(--padding) 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--secondary-color);
+}
+
+.cta-button i {
+    margin-right: 10px;
+}
+
+/* Estilos para los encabezados de proyectos */
+.project-title {
+    font-size: var(--font-size-medium);
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-top: 15px;
+}
+
+/* Estilos para las descripciones de proyectos */
+.project-description {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Media Queries para Responsividad */
+
+/* Para dispositivos móviles */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: var(--font-size-small);
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-item {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .cta-button {
+        font-size: 14px;
+        padding: var(--padding) 15px;
+    }
+}
+
+/* Para tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hero-content h1 {
+        font-size: var(--font-size-medium);
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: var(--padding) 20px;
+    }
+}
+
+/* Para pantallas grandes */
+@media (min-width: 1024px) {
+    .hero-content h1 {
+        font-size: var(--font-size-large);
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cta-button {
+        font-size: 18px;
+    }
+}
