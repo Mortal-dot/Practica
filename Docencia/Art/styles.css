@@ -593,3 +593,84 @@ footer i {
 
     
 }
+
+
+    .visible-images img {
+        width: 60px; /* Tamaño de las imágenes en móviles pequeños */
+        height: auto; /* Mantener la relación de aspecto */
+    }
+
+    #seccion-galeria {
+        padding: 10px; /* Reducir espaciado interno en móviles pequeños */
+    }
+
+
+}
+
+#social-media {
+    margin-top: 20px; /* Ajusta el valor según necesites */
+}        
+
+/* Estilos generales para pantallas grandes */
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilos para pantallas móviles (menos de 768px de ancho) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Opcional: ajusta el tamaño de fuente para móviles */
+    }
+    
+    .container {
+        text-align: right; /* Alinea el texto a la derecha */
+        width: 100%; /* Puede ajustarse para que ocupe todo el ancho de la pantalla */
+        padding-right: 10px; /* Añade un poco de espacio a la derecha si es necesario */
+    }
+}
+
+ /* Estilos generales para pantallas grandes */
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilos para pantallas móviles (menos de 768px de ancho) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reduce el tamaño de la fuente para móviles */
+    }
+    
+    .container {
+        text-align: right; /* Alinea el texto a la derecha */
+        width: 100%; /* Usa el 100% del ancho disponible */
+        padding-right: 10px; /* Añade un poco de espacio a la derecha */
+        word-wrap: break-word; /* Evita que las palabras largas se desborden */
+        overflow-wrap: break-word; /* Alternativa más moderna */
+        box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+    }
+
+    /* Ajustar el tamaño de la fuente según el ancho */
+    h1, h2, h3, p { 
+        font-size: 14px; /* Ajusta el tamaño de texto en los encabezados y párrafos */
+    }
+
+    /* Si se necesitan márgenes para mejorar la legibilidad */
+    h1, h2, h3, p {
+        margin: 10px 0; /* Márgenes para separar los textos */
+    }
+}
+ 
