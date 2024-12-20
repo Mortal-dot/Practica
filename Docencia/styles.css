@@ -507,3 +507,57 @@ body {
         font-size: 1em; /* Reduce el tamaño del texto en pantallas pequeñas */
     }
 }
+
+/* Estilos generales para la sección de publicidad */
+#publicidad {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Agrega espacio alrededor de la sección */
+}
+
+.icono {
+    width: 80px; /* Define un tamaño fijo para el icono */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-bottom: 10px; /* Agrega un pequeño espacio debajo del icono */
+}
+
+h3 {
+    font-size: 1.5em; /* Tamaño del título */
+    margin-bottom: 15px; /* Agrega espacio debajo del título */
+}
+
+p {
+    font-size: 1.1em; /* Tamaño del texto */
+    line-height: 1.5; /* Mejora la legibilidad con más espacio entre las líneas */
+    max-width: 700px; /* Limita el ancho del párrafo */
+    margin: 0 auto; /* Centra el párrafo */
+}
+
+/* Media queries para pantallas móviles */
+@media (max-width: 768px) {
+    .icono {
+        width: 60px; /* Reduce el tamaño del icono en pantallas más pequeñas */
+    }
+
+    h3 {
+        font-size: 1.2em; /* Reduce el tamaño del título en pantallas pequeñas */
+    }
+
+    p {
+        font-size: 1em; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+        padding: 0 15px; /* Agrega un pequeño padding a los lados para evitar que el texto quede pegado al borde */
+    }
+}
+
+@media (max-width: 480px) {
+    h3 {
+        font-size: 1em; /* Reduce aún más el tamaño del título en pantallas muy pequeñas */
+    }
+
+    p {
+        font-size: 0.9em; /* Ajusta aún más el tamaño del texto en pantallas pequeñas */
+        padding: 0 10px; /* Ajusta el padding */
+    }
+}
