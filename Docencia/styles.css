@@ -302,14 +302,17 @@ footer {
     position: relative;
     background-color: #282828;
     color: #fff;
-    padding: 20px 0; /* Ajusta el padding superior e inferior */
+    padding: 40px 20px; /* Ajusta el padding superior e inferior */
     overflow: hidden; /* Asegúrate de que el efecto no se desborde */
+    font-family: Arial, sans-serif; /* Asegúrate de usar una fuente legible */
+    letter-spacing: 0.5px; /* Añadir espaciado entre letras para mejor legibilidad */
 }
 
 /* Asegúrate de que el texto esté encima del efecto */
 footer .container {
     position: relative;
     z-index: 2;
+    text-align: center; /* Centra el texto */
 }
 
 /* Estilos para el contenedor de las olas */
@@ -350,6 +353,57 @@ footer .container {
     }
     100% {
         transform: translateX(-50%) translateY(0);
+    }
+}
+
+/* Media queries para pantallas móviles */
+@media (max-width: 768px) {
+    footer {
+        padding: 20px; /* Reduce el padding para pantallas más pequeñas */
+    }
+
+    footer .container {
+        padding: 0 15px; /* Añade un poco de padding a los lados del contenedor */
+    }
+
+    footer h3, footer p {
+        font-size: 1.2em; /* Ajusta el tamaño del texto */
+        line-height: 1.4; /* Espacio entre líneas para mejorar la legibilidad */
+    }
+
+    .wave-container {
+        height: 100px; /* Ajusta la altura de la ola en pantallas más pequeñas */
+    }
+
+    .wave {
+        height: 80px; /* Ajusta la altura de la ola */
+    }
+
+    .wave.wave2 {
+        height: 120px; /* Ajusta la altura de la segunda ola */
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 15px; /* Reduce aún más el padding en dispositivos muy pequeños */
+    }
+
+    footer h3, footer p {
+        font-size: 1em; /* Ajusta el tamaño del texto para pantallas muy pequeñas */
+        line-height: 1.4; /* Mejora la legibilidad */
+    }
+
+    .wave-container {
+        height: 80px; /* Ajusta aún más la altura de la ola */
+    }
+
+    .wave {
+        height: 60px; /* Ajusta la altura de la ola */
+    }
+
+    .wave.wave2 {
+        height: 100px; /* Ajusta la altura de la segunda ola */
     }
 }
 
