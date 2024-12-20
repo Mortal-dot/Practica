@@ -674,3 +674,43 @@ body {
     }
 }
  
+/* Estilos generales para los botones */
+.social-buttons {
+    display: flex;
+    justify-content: center; /* Centra los botones en la pantalla */
+    gap: 15px; /* Espacio entre los botones */
+    padding: 10px;
+}
+
+.social-icon {
+    font-size: 2rem; /* Tamaño de los iconos */
+    color: #333; /* Color de los iconos */
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #007bff; /* Color al pasar el cursor */
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .social-buttons {
+        justify-content: space-evenly; /* Distribuye los botones en el espacio disponible */
+    }
+
+    .social-icon {
+        font-size: 1.5rem; /* Disminuye el tamaño de los iconos en móviles */
+    }
+}
+
+@media (max-width: 480px) {
+    .social-buttons {
+        flex-direction: column; /* Cambia los botones a una columna en pantallas más pequeñas */
+        align-items: center; /* Centra los botones en la columna */
+    }
+
+    .social-icon {
+        font-size: 1.2rem; /* Aún más pequeño en dispositivos muy pequeños */
+        margin-bottom: 10px; /* Espacio entre los botones en la columna */
+    }
+}
