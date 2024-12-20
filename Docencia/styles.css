@@ -218,11 +218,12 @@ section h2 {
 }
 
 .profile-img {
-    max-width: 200px;
+    max-width: 300px; /* Aumenta el tamaño de la imagen */
     border-radius: 50%;
     margin-top: 20px;
     filter: sepia(20%) blur(2px);
 }
+
 
 
 
