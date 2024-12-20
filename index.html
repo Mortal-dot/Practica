@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- Meta viewport para hacer que la página sea responsiva -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Fan Page creada por un fan, para juntar el trabajo de Ecos Del Abismo">
+    <title>👋 Fan Page "Ecos Del Abismo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Contenido de tu página -->
+</body>
+</html>
+
+    
+
+    <!-- Video de fondo -->
+    <section class="principal">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="./sobre-mi/index.html">👋 Sobre Mí |</a></li>
+                    <li><a href="./Docencia/index.html">Compadres del abismo |</a></li>
+                    <li><a href="#skills">Mis Habilidades |</a></li>
+                    <li><a href="#projects">Diferentes Proyectos recomendados |</a></li>
+                </ul>
+            </nav>
+        </header>
+        <video autoplay muted loop id="bg-video" playsinline>
+            <source src="images/presentacion.mp4" type="video/mp4">
+            <source src="images/presentacion.webm" type="video/webm">
+            Tu navegador no soporta la reproducción de video.
+        </video>
+
+        <div class="principal-contenido">
+            <h1>Hola, soy Mateo Jaramillo.</h1>
+            <h2>Mejor conocido como "Ecos Del Abismo".</h2>
+            <p id="dynamic-text">Creación de contenido, así como creador de diferentes proyectos de magia siniestra.</p>
+            <a href="#skills" class="cta-button">¿Cómo te puedo ayudar?</a>
+        </div>
+    </section>
+
+    <section id="sobre-mi">
+        <h2>¿Quién soy?</h2>
+        <p>Soy Mateo Jaramillo, de la pequeña ciudad de Pereira, Colombia. Ecos Del Abismo es una ofrenda hacia las entidades del lado nocturno y siniestro. Ecos del Abismo es un tributo a esos ecos profundos y ocultos, un espacio en el que la oscuridad se convierte en voz, y en el que, a través de cada palabra y acción, se honra la llama negra que arde en lo más profundo del abismo. ¡Que arda la llama negra!</p>
+        <p>No dudes en <a href="https://www.instagram.com/ecosdelabismo/" target="_blank" style="font-weight: bold; color: white; text-decoration: none;">contactar</a>.</p>
+        <a href="https://www.youtube.com/@EcosdelAbismo" class="cta-button" target="_blank">
+            <i class="bi bi-youtube"></i> Conóceme
+        </a>
+    </section>
+
+    <section id="skills">
+        <h2>Habilidades</h2>
+        <div class="skills-grid">
+            <div class="skill-item" data-skill="Visitame en mi canal para Más información de Magia">
+                <h3> Magia siniestras</h3>
+                <p> creador del Proyecto Ecos Del Abismo.</p>
+                <p> Varios libros creados por mi persona.</p>
+                <p> Trabajos magicos dependiendo de sus necesidades.</p>
+                <p> Creación de Cajas y collares personalizadas dependiendo de sus necesidades.</p>
+                <p> Lecturas de Tarot.</p>
+                <a href="#" class="cta-button">Más información</a>
+            </div>
+            <div class="skill-item" data-skill="Trayectoria academica">
+                <h3> A nivel profesional y académico</h3>
+                <p>he realizado estudios como Licenciado en Comunicación e Informática Educativa en la Universidad Tecnológica de Pereira únicamente tengo pendiente graduarme, lo he postergado debido a que mis obligaciones actuales no me han brindado el tiempo y espacio necesario para cerrar ese capítulo de mi vida.</p>
+                <a href="#" class="cta-button">Más información</a>
+            </div>
+            <div class="skill-item" data-skill="Visitame en mi canal para Más información de Magia">
+                <h3> A nivel público, mágicko y si se quiere, espiritual.</h3>
+                <p>he fungido como creador de contenido desde hace poco más de 4 años a través de mi proyecto conocido como Ecos del Abismo, el cual es un espacio donde he pretendido difundir información relativa a la Magiak, el Ocultismo y la Espiritualidad desde un enfoque netamente Siniestro, dándole una total y absoluta relevancia a los discursos provenientes de las corrientes adjuntas al Sendero de la Mano Izquierda. A partir de allí también he tenido la posibilidad de dedicarme al oficio de tarotista, así como de guía – educador personalizado sobre estas temáticas y también como “artesano” de artefactos enfocados en la conexión mágicka, entre otras actividades.</p>
+                <a href="#" class="cta-button">Más información</a>
+            </div>
+        </div>
+    </section>
+    
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button">&times;</span>
+            <h3 id="popup-title"></h3>
+            <p id="popup-text"></p>
+        </div>
+    </div>
+
+    <section id="servicios">
+        <h2>Mis Servicios</h2>
+        <div class="services-list">
+            <div class="service-item" data-delay="0">
+                <h3>Sendero de mano izquierda entre otras deidades</h3>
+                <p>Trabajos de magia.</p>
+            </div>
+            <div class="service-item" data-delay="0.2s">
+                <h3>Lecturas de Tarot</h3>
+                <p>Lecturas de tarot adaptadas a tus necesidades.</p>
+            </div>
+            <div class="service-item" data-delay="0.4s">
+                <h3>Difución de otros creadores de contenido del sendero izquierdo</h3>
+                <p>Entrevistas a varias personas con conocimiento de la mano izquierda.</p>
+            </div>
+            <div class="service-item" data-delay="0.6s">
+                <h3>Patreon</h3>
+                <p>En Patreon se encuentra muchísimo contenido que en ciertas plataformas como You Tube o instagram se consideran TABU por ende no se pueden mencionar, así como los Podcast del abismo.</p>
+            </div>
+            <div class="service-item" data-delay="0.8s">
+                <h3>Manufacturación de cajas y collares</h3>
+                <p>Destierros y limpiezas con plantas ancentrales.</p>
+            </div>
+    </section>
+
+    <section id="seccion-galeria">
+        <div class="image-gallery">
+            <a href="https://www.instagram.com/p/CSXDsjSrwLh/" target="_blank">
+                <img src="images/python.webp" alt="Python">
+            </a>
+            <a href="https://www.instagram.com/p/CSsl--grotL/" target="_blank">
+                <img src="images/bash.png" alt="Bash">
+            </a>
+            <a href="https://www.instagram.com/p/CS_85wQr-QV/" target="_blank">
+                <img src="images/js.png" alt="JavaScript">
+            </a>
+            <a href="https://www.instagram.com/p/CTOEb2WLbVU/" target="_blank">
+                <img src="images/secure.png" alt="Seguridad">
+            </a>
+            <a href="https://www.instagram.com/p/CTXW6oIrZ0e/" target="_blank">
+                <img src="images/java.webp" alt="Java">  
+            </a>
+            <a href="https://www.instagram.com/p/CTmt4tErThm/" target="_blank">
+                <img src="images/sql.png" alt="SQL">
+            </a>
+            <a href="https://www.instagram.com/p/CTxZ71wrwlg/" target="_blank">
+                <img src="images/tux.webp" alt="Linux Tux">
+            </a>
+            <a href="https://www.instagram.com/p/CUNYtWerxvy/" target="_blank">
+                <img src="images/redes.png" alt="Redes">
+            </a>
+            <a href="https://www.instagram.com/p/CUU0VHQjk1i/" target="_blank">
+                <img src="images/html.png" alt="HTML">
+            </a>
+            <a href="https://www.instagram.com/p/CU5O2MWLZlb/" target="_blank">
+                <img src="images/docker.webp" alt="Docker">
+            </a>
+            <a href="https://www.instagram.com/p/CU-eVZWLMeP/" target="_blank">
+                <img src="images/python2.webp" alt="Python">
+            </a>
+            <a href="https://www.instagram.com/p/CVif6ugrKaR/" target="_blank">
+                <img src="images/awe.webp" alt="Bash">
+            </a>
+            <a href="https://www.instagram.com/p/CV254uDLBaR/" target="_blank">
+                <img src="images/qfs.webp" alt="Kali Linux">
+            </a>
+            <a href="https://www.instagram.com/p/CWUMxMGLtn6/" target="_blank">
+                <img src="images/sdsf.webp" alt="JavaScript">
+            </a>
+            <a href="https://www.instagram.com/p/CWd-qGbrrKE/" target="_blank">
+                <img src="images/dawe.webp" alt="Seguridad">
+            </a>
+            <a href="https://www.instagram.com/p/CW1HA9Prkls/" target="_blank">
+                <img src="images/dwqq.webp" alt="Java">
+            </a>
+            <a href="https://www.instagram.com/p/CXbX0Y_LC4I/" target="_blank">
+                <img src="images/dwqeds.webp" alt="SQL">
+            </a>
+            <a href="https://www.instagram.com/p/CXzKKQMr-Ts/" target="_blank">
+                <img src="images/wqeqfwe.webp" alt="Linux Tux">
+            </a>
+            <a href="https://www.instagram.com/p/ChAim6zLVXp/" target="_blank">
+                <img src="images/wqeqesa.webp" alt="MongoDB">
+            </a>
+            <a href="https://www.instagram.com/p/CpBLYR9O5oc/" target="_blank">
+                <img src="images/wqeqsqq1.webp" alt="Redes">
+            </a>
+            <a href="https://www.instagram.com/p/CrB98L1LCbr/" target="_blank">
+                <img src="images/gfege.webp" alt="HTML">
+            </a>
+            <a href="https://www.instagram.com/p/CtjgEecLS7t/" target="_blank">
+                <img src="images/warqwe1.webp" alt="CSS">
+            </a>
+            <a href="https://www.instagram.com/p/CUC7cJNLIxp/" target="_blank">
+                <img src="images/sd.png" alt="MongoDB">
+            </a>
+            <a href="https://www.instagram.com/p/BrGGOj4FnGz/" target="_blank">
+                <img src="images/ui.webp" alt="Python">
+            </a>
+            <a href="https://www.instagram.com/p/BsTSGGLAfc-/" target="_blank">
+                <img src="images/lliu.webp" alt="Bash">
+            </a>
+            <a href="https://www.instagram.com/p/BtTvPNvFodM/" target="_blank">
+                <img src="images/yfk.webp" alt="JavaScript">
+            </a>
+            <a href="https://www.instagram.com/p/BxVOamwl_NY/" target="_blank">
+                <img src="images/yuku.webp" alt="Seguridad">
+            </a>
+            <a href="https://www.instagram.com/p/Bykzv3UI7pr/" target="_blank">
+                <img src="images/oigh.webp" alt="Java">
+            </a>
+            <a href="https://www.instagram.com/p/BzEgz_bI-5y/" target="_blank">
+                <img src="images/ioñi.webp" alt="SQL">
+            </a>
+            <a href="https://www.instagram.com/p/B3-orDbF8Bd/" target="_blank">
+                <img src="images/hiñh.webp" alt="Linux Tux">
+            </a>
+            <a href="https://www.instagram.com/p/B6j3wF6F3YT/" target="_blank">
+                <img src="images/ihñh.webp" alt="Redes">
+            </a>
+            <a href="https://www.instagram.com/p/B-7nml-lLfE/" target="_blank">
+                <img src="images/hiñio.webp" alt="HTML">
+            </a>
+            <a href="https://www.instagram.com/p/CAv0USSFbUC/" target="_blank">
+                <img src="images/hñih.webp" alt="CSS">
+            </a>
+            <a href="https://www.instagram.com/p/CDmiEPal66x/" target="_blank">
+                <img src="images/poip.webp" alt="Docker">
+            </a>
+            <a href="https://www.instagram.com/p/CF-ZfGwF2-x/" target="_blank">
+                <img src="images/ioñh.webp" alt="Python">
+            </a>
+            <a href="https://www.instagram.com/p/CHaocnqFSym/" target="_blank">
+                <img src="images/ñioñi.webp" alt="Bash">
+            </a>
+            <a href="https://www.instagram.com/p/CH8sIRyl6Yw/" target="_blank">
+                <img src="images/op.webp" alt="Kali Linux">
+            </a>
+            <a href="https://www.instagram.com/p/CIqlf3wl2kC/" target="_blank">
+                <img src="images/nbh.webp" alt="JavaScript">
+            </a>
+            <a href="https://www.instagram.com/p/CJtPu6BFAfP/" target="_blank">
+                <img src="images/vkvy.webp" alt="Seguridad">
+            </a>
+            <a href="https://www.instagram.com/p/CJ6YLaBljJA/" target="_blank">
+                <img src="images/yuk.webp" alt="Java">
+            </a>
+            <a href="https://www.instagram.com/p/CKCjF5QFVlt/" target="_blank">
+                <img src="images/yvkt.webp" alt="SQL">
+            </a>
+            <a href="https://www.instagram.com/p/CKRPUcIFACM/" target="_blank">
+                <img src="images/tyj.webp" alt="Linux Tux">
+            </a>
+            <a href="https://www.instagram.com/p/CKepxSoleHT/" target="_blank">
+                <img src="images/ctjy.webp" alt="MongoDB">
+            </a>
+            <a href="https://www.instagram.com/p/CKxBKaplvoV/" target="_blank">
+                <img src="images/httr.webp" alt="Redes">
+            </a>
+            <a href="https://www.instagram.com/p/CLKIfbhFz04/" target="_blank">
+                <img src="images/tru.webp" alt="HTML">
+            </a>
+            <a href="https://www.instagram.com/p/CLUsotQlY62/" target="_blank">
+                <img src="images/xtf.webp" alt="CSS">
+            </a>
+            <a href="https://www.instagram.com/p/CLesBTfFHGU/" target="_blank">
+                <img src="images/rt.webp" alt="Docker">
+            </a>
+            <a href="https://www.instagram.com/p/CLmOpR4FW5X/" target="_blank">
+                <img src="images/thr.webp" alt="Python">
+            </a>
+            <a href="https://www.instagram.com/p/CL9YGocFGer/" target="_blank">
+                <img src="images/zre.webp" alt="Bash">
+            </a>
+            <a href="https://www.instagram.com/p/CMKI6UDlDI6/" target="_blank">
+                <img src="images/erzg.webp" alt="Kali Linux">
+            </a>
+            <a href="https://www.instagram.com/p/CMSshIxlttU/" target="_blank">
+                <img src="images/thrh.webp" alt="JavaScript">
+            </a>
+            <a href="https://www.instagram.com/p/CMU5zhcFY8v/" target="_blank">
+                <img src="images/ege.webp" alt="Seguridad">
+            </a>
+            <a href="https://www.instagram.com/p/CMvbzallnvX/" target="_blank">
+                <img src="images/jhtg.webp" alt="Java">
+            </a>
+            <a href="https://www.instagram.com/p/CNAkH1Bl1ol/" target="_blank">
+                <img src="images/reg.webp" alt="SQL">
+            </a>
+            <a href="https://www.instagram.com/p/CNSXys9ln2B/" target="_blank">
+                <img src="images/ezg.webp" alt="Linux Tux">
+            </a>
+            <a href="https://www.instagram.com/p/CNXbD7Klntj/" target="_blank">
+                <img src="images/egerz.webp" alt="MongoDB">
+            </a>
+            <a href="https://www.instagram.com/p/CNqLq3-rtCr/" target="_blank">
+                <img src="images/kutyj.webp" alt="Redes">
+            </a>
+            <a href="https://www.instagram.com/p/CN7vN1Xl3wO/" target="_blank">
+                <img src="images/jctyjj.webp" alt="HTML">
+            </a>
+            <a href="https://www.instagram.com/p/COdMk69raS7/" target="_blank">
+                <img src="images/hfgh.webp" alt="Docker">
+            </a>
+            <a href="https://www.instagram.com/p/CO0eHgfrkUV/" target="_blank">
+                <img src="images/thxhr.webp" alt="HTML">
+            </a>
+            <a href="https://www.instagram.com/p/CPJHWLKHpIo/" target="_blank">
+                <img src="images/hrth.webp" alt="hpol">
+            </a>
+            <a href="https://www.instagram.com/p/CP37GDqne82/" target="_blank">
+                <img src="images/hrx.webp" alt="Docker">
+            </a>
+            <a href="https://www.instagram.com/p/CQbhw5oHe1Q/" target="_blank">
+                <img src="images/zege.webp" alt="Bash">
+            </a>
+            <a href="https://www.instagram.com/p/CRAEZ4rLbAc/" target="_blank">
+                <img src="images/uku.webp" alt="Kali Linux">
+            </a>
+            <a href="https://www.instagram.com/p/CRJuUV5r8aO/" target="_blank">
+                <img src="images/rhr.webp" alt="JavaScript">
+            </a>
+            <a href="https://www.instagram.com/p/CRPQjR-LM_6/" target="_blank">
+                <img src="images/kykt.webp" alt="Seguridad">
+            </a>
+            <a href="https://www.instagram.com/p/CRcVkror6M4/" target="_blank">
+                <img src="images/xrhr.webp" alt="Java">
+            </a>
+            <a href="https://www.instagram.com/p/CRrBeV_rEMh/" target="_blank">
+                <img src="images/zgez.webp" alt="SQL">
+            </a>
+            <a href="https://www.instagram.com/p/CRz8lhtLHou/" target="_blank">
+                <img src="images/WF.webp" alt="Linux Tux">
+            </a>
+            <a href="https://www.instagram.com/p/CSF3KxMLyEc/" target="_blank">
+                <img src="images/efwf.webp" alt="MongoDB">
+            </a>
+            <a href="https://www.instagram.com/p/COqRoaXrV0n/" target="_blank">
+                <img src="images/wfwe.webp" alt="Redes">
+            </a>
+            <a href="https://www.instagram.com/p/Brk3ImAFyv2/" target="_blank">
+                <img src="images/tyu.webp" alt="HTML">
+            </a>
+        </div>
+    </section>
+    
+    <section class="videos">
+        <h2>Entrevistas</h2>
+        <div>
+            <div class="video">
+                <p class="video-title">Culto y Devoción a la Santa Muerte</p>
+                <a href="https://www.youtube.com/watch?v=gGHRsv6cZ0o" target="_blank">
+                    <img src="https://img.youtube.com/vi/gGHRsv6cZ0o/0.jpg" alt="Santa Muerte" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Cambio de Forma y Culto al Lobo Ft. Viðolfr Hróðvitnisson</p>
+                <a href="https://www.youtube.com/watch?v=1tTSyiyz3hA" target="_blank">
+                    <img src="https://img.youtube.com/vi/1tTSyiyz3hA/0.jpg" alt="Licantropía & Teriomorfismo" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Quimbanda Luciferiana Ft.Jessica & Arcana XIII</p>
+                <a href="https://www.youtube.com/watch?v=hC1aN3h3pmA" target="_blank">
+                    <img src="https://img.youtube.com/vi/hC1aN3h3pmA/0.jpg" alt="Quimbanda" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Brujería Tradicional: Vuelo del Alma & Bótanica Oculta</p>
+                <a href="https://www.youtube.com/watch?v=Hm5Vgi0SZVQ" target="_blank">
+                    <img src="https://img.youtube.com/vi/Hm5Vgi0SZVQ/0.jpg" alt="Brujería Tradicional" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Africanismo, Brujería & Magiak Occidental</p>
+                <a href="https://www.youtube.com/watch?v=kYRveWzjdVY" target="_blank">
+                    <img src="https://img.youtube.com/vi/kYRveWzjdVY/0.jpg" alt="Africanismo, Brujería & Magiak Occidental" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Arte & Magiak Siniestra - Una Conversación con: Nestor</p>
+                <a href="https://www.youtube.com/watch?v=GDIwuIjeMWU" target="_blank">
+                    <img src="https://img.youtube.com/vi/GDIwuIjeMWU/0.jpg" alt="Arte & Magiak Siniestra" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Ginnstígr - Gigantes Nórdicos ft. Ljóssál Loðursson</p>
+                <a href="https://www.youtube.com/watch?v=H4Qnn52g9Co" target="_blank">
+                    <img src="https://img.youtube.com/vi/H4Qnn52g9Co/0.jpg" alt="Ginnstígr - Gigantes Nórdicos" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Lo Sagrado Femenino Oscuro con Santuario de lilith</p>
+                <a href="https://www.youtube.com/watch?v=dx3wkCGaVlE" target="_blank">
+                    <img src="https://img.youtube.com/vi/dx3wkCGaVlE/0.jpg" alt="Lo Sagrado Femenino Oscuro" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Trolldom & Sendero Siniestro con Ingrid Sjolander</p>
+                <a href="https://www.youtube.com/watch?v=dzMZekbov9k" target="_blank">
+                    <img src="https://img.youtube.com/vi/dzMZekbov9k/0.jpg" alt="Trolldom & Sendero Siniestro" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Lo Oculto y lo Paranormal ft. Relatos de Horror</p>
+                <a href="https://www.youtube.com/watch?v=fUAfRww5XHs" target="_blank">
+                    <img src="https://img.youtube.com/vi/fUAfRww5XHs/0.jpg" alt="Trolldom & Sendero Siniestro" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Brujería Tradicional & Tarot Una Conversación - Cardo y Espino</p>
+                <a href="https://www.youtube.com/watch?v=nMpJbojAhQI" target="_blank">
+                    <img src="https://img.youtube.com/vi/nMpJbojAhQI/0.jpg" alt="Tarot Una Conversación - Cardo y Espino" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Celebraciones Invernales & Saturnales Ft. Ljóssál Loðursson</p>
+                <a href="https://www.youtube.com/watch?v=gHk49XMCaso" target="_blank">
+                    <img src="https://img.youtube.com/vi/gHk49XMCaso/0.jpg" alt="Tarot Una Conversación - Cardo y Espino" />
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="videos">
+        <h2>Practicas Magicas</h2>
+        <div>
+            <div class="video">
+                <p class="video-title">Meditación: Controla tu Mente</p>
+                <a href="https://www.youtube.com/watch?v=npZqNbQvcx4" target="_blank">
+                    <img src="https://img.youtube.com/vi/npZqNbQvcx4/0.jpg" alt="Meditación: Controla tu Mente" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Activa tus 7 Centros Oscuros</p>
+                <a href="https://www.youtube.com/watch?v=OPOzzx73plk" target="_blank">
+                    <img src="https://img.youtube.com/vi/OPOzzx73plk/0.jpg" alt="Activa tus 7 Centros Oscuros" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Proyección Astral - Parte 1</p>
+                <a href="https://www.youtube.com/watch?v=c7lZNMnV6Kc&t=30s" target="_blank">
+                    <img src="https://img.youtube.com/vi/c7lZNMnV6Kc/0.jpg" alt="Proyección Astral - Parte 1" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Proyección Astral - Parte 2</p>
+                <a href="https://www.youtube.com/watch?v=jLvrrSZVLtM" target="_blank">
+                    <img src="https://img.youtube.com/vi/jLvrrSZVLtM/0.jpg" alt="Proyección Astral - Parte 2" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Proyección Astral - Parte 3</p>
+                <a href="https://www.youtube.com/watch?v=FgJ3Uvmc5NQ" target="_blank">
+                    <img src="https://img.youtube.com/vi/FgJ3Uvmc5NQ/0.jpg" alt="Proyección Astral - Parte 3" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Técnicas de Sigilización</p>
+                <a href="https://www.youtube.com/watch?v=UYZQ_w7hCTU" target="_blank">
+                    <img src="https://img.youtube.com/vi/UYZQ_w7hCTU/0.jpg" alt="Técnicas de Sigilización" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Las Herramientas del Altar</p>
+                <a href="https://www.youtube.com/watch?v=uVyapLWWLNQ&t=110s" target="_blank">
+                    <img src="https://img.youtube.com/vi/uVyapLWWLNQ/0.jpg" alt="Las Herramientas del Altar" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Control y Proyección Energética</p>
+                <a href="https://www.youtube.com/watch?v=_C57ijQs94M" target="_blank">
+                    <img src="https://img.youtube.com/vi/_C57ijQs94M/0.jpg" alt="Control y Proyección Energética" />
+                </a>
+            </div> 
+            <div class="video">
+                <p class="video-title">La Caverna de Lilith</p>
+                <a href="https://www.youtube.com/watch?v=Cb-Yv52GArQ" target="_blank">
+                    <img src="https://img.youtube.com/vi/Cb-Yv52GArQ/0.jpg" alt="La Caverna de Lilith" />
+                </a>
+            </div> 
+            <div class="video">
+                <p class="video-title">Despertando Habilidades Mágicas: Tierra - Agua</p>
+                <a href="https://www.youtube.com/watch?v=L7dMuvbyCx0" target="_blank">
+                    <img src="https://img.youtube.com/vi/L7dMuvbyCx0/0.jpg" alt="Despertando Habilidades Mágicas" />
+                </a>
+            </div> 
+            <div class="video">
+                <p class="video-title">Despertando Habilidades Mágicas: Aire, Fuego, Espíritu</p>
+                <a href="https://www.youtube.com/watch?v=vF-yGy3_WCk" target="_blank">
+                    <img src="https://img.youtube.com/vi/vF-yGy3_WCk/0.jpg" alt="Despertando Habilidades Mágicas" />
+                </a>
+            </div> 
+            <div class="video">
+                <p class="video-title">Descendo In Nomine Lucifer - Meditación Guiada</p>
+                <a href="https://www.youtube.com/watch?v=p_EeFGnZtEY" target="_blank">
+                    <img src="https://img.youtube.com/vi/p_EeFGnZtEY/0.jpg" alt="Descendo In Nomine Lucifer" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Abriendo El Tercer Ojo - Meditación Guiada</p>
+                <a href="https://www.youtube.com/watch?v=dHfblloi7mE" target="_blank">
+                    <img src="https://img.youtube.com/vi/dHfblloi7mE/0.jpg" alt="Abriendo El Tercer Ojo" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Invocación de la Llama Negra - "Meditación Guiada"</p>
+                <a href="https://www.youtube.com/watch?v=Y0Zd_ePk9FE" target="_blank">
+                    <img src="https://img.youtube.com/vi/Y0Zd_ePk9FE/0.jpg" alt="Invocación de la Llama Negra" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Magia Qlifótica: Ejercicio del Pilar Medio"</p>
+                <a href="https://www.youtube.com/watch?v=w0DscBqVBjg" target="_blank">
+                    <img src="https://img.youtube.com/vi/w0DscBqVBjg/0.jpg" alt="Magia Qlifótica" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Meditación en Cubo - Ejercicio Práctico"</p>
+                <a href="https://www.youtube.com/watch?v=ZqLL8wiEbOQ" target="_blank">
+                    <img src="https://img.youtube.com/vi/ZqLL8wiEbOQ/0.jpg" alt="Meditación en Cubo" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Sigilos Mágickos: Técnicas de Carga & Activación"</p>
+                <a href="https://www.youtube.com/watch?v=X-EwVyygjPE" target="_blank">
+                    <img src="https://img.youtube.com/vi/X-EwVyygjPE/0.jpg" alt="Sigilos Mágickos" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Auto Iniciación en el Sendero Siniestro - Parte 1"</p>
+                <a href="https://www.youtube.com/watch?v=-5x8jcBwvGs" target="_blank">
+                    <img src="https://img.youtube.com/vi/-5x8jcBwvGs/0.jpg" alt="Auto Iniciación" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Auto Iniciación en el Sendero Siniestro - Parte 2"</p>
+                <a href="https://www.youtube.com/watch?v=S7ykjVVT3SY" target="_blank">
+                    <img src="https://img.youtube.com/vi/S7ykjVVT3SY/0.jpg" alt="Auto Iniciación 2" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Himno a Hékate - Una Ofrenda Sonora a la Señora Nocturna"</p>
+                <a href="https://www.youtube.com/watch?v=-IOF26Eda30" target="_blank">
+                    <img src="https://img.youtube.com/vi/-IOF26Eda30/0.jpg" alt="Himno a Hékate" />
+                </a>
+            </div>
+    
+<section class="videos">
+                <h2>Varios Temas de Magia</h2>
+                <div>
+                    <div class="video">
+                        <p class="video-title">Los Qlippoth - El Gran Árbol de la Muerte</p>
+                        <a href="https://www.youtube.com/watch?v=wM17DZIUb6s" target="_blank">
+                            <img src="https://img.youtube.com/vi/wM17DZIUb6s/0.jpg" alt="Los Qlippoth" />
+                        </a>
+                    </div>
+                    <div class="video">
+                        <p class="video-title">Las 9 Puertas de la Iniciación - Parte I</p>
+                        <a href="https://www.youtube.com/watch?v=uxqoJEsIBxY" target="_blank">
+                            <img src="https://img.youtube.com/vi/uxqoJEsIBxY/0.jpg" alt="Las 9 Puertas de la Iniciación" />
+                        </a>
+                    </div>
+                    <div class="video">
+                        <p class="video-title">Las 9 puertas de la Iniciación - Parte ll</p>
+                        <a href="https://www.youtube.com/watch?v=dDuRGfPQySU" target="_blank">
+                            <img src="https://img.youtube.com/vi/dDuRGfPQySU/0.jpg" alt="Las 9 puertas de la Iniciación" />
+                        </a>
+                    </div>
+                    <div class="video">
+                        <p class="video-title">Demonolatría Moderna: Contacto y comunión con Demonios</p>
+                        <a href="https://www.youtube.com/watch?v=FuOB0TVumIc" target="_blank">
+                            <img src="https://img.youtube.com/vi/FuOB0TVumIc/0.jpg" alt="Demonolatría Moderna" />
+                        </a>
+                    </div>
+                    <div class="video">
+                        <p class="video-title">Magia Sexual: Introducción</p>
+                        <a href="https://www.youtube.com/watch?v=y1pELaVIX8I" target="_blank">
+                            <img src="https://img.youtube.com/vi/y1pELaVIX8I/0.jpg" alt="Magia Sexual" />
+                        </a>
+                    </div>
+                    <div class="video">
+                        <p class="video-title">Magia Qlifótica - Lilith "La Reina de la Noche"</p>
+                        <a href="https://www.youtube.com/watch?v=HcrEN8AuX5A" target="_blank">
+                            <img src="https://img.youtube.com/vi/HcrEN8AuX5A/0.jpg" alt="Magia Qlifótica" />
+                        </a>
+                    </div>
+                    <div class="video">
+                        <p class="video-title">Qayin Rex Sinister: Señor de la Mano Izquierda</p>
+                        <a href="https://www.youtube.com/watch?v=ZZyocV0QGJ0" target="_blank">
+                            <img src="https://img.youtube.com/vi/ZZyocV0QGJ0/0.jpg" alt="Qayin Rex Sinister" />
+                        </a>
+                    </div>
+                    <div class="video">
+                        <p class="video-title">Métodos de Trabajo del Sendero Siniestro: Pathworking</p>
+                        <a href="https://www.youtube.com/watch?v=Qf1AO2QnVBM" target="_blank">
+                            <img src="https://img.youtube.com/vi/Qf1AO2QnVBM/0.jpg" alt="Métodos de Trabajo" />
+                        </a>
+                    </div>
+                    <div class="video">
+                        <p class="video-title">Espiritismo, Mediumnidad, Invocación</p>
+                        <a href="https://www.youtube.com/watch?v=7efAD1LDC5o" target="_blank">
+                            <img src="https://img.youtube.com/vi/7efAD1LDC5o/0.jpg" alt="Espiritismo, Mediumnidad" />
+                        </a>
+                    </div>
+                    <div class="video">
+                        <p class="video-title">Satanismo Anti-cósmico: La Corriente 218</p>
+                        <a href="https://www.youtube.com/watch?v=cOGcmDhwl9E" target="_blank">
+                            <img src="https://img.youtube.com/vi/cOGcmDhwl9E/0.jpg" alt="Satanismo Anti-cósmico" />
+                        </a>
+                    </div>
+                    <div class="video">
+                        <p class="video-title">Consejos Prácticos al Iniciar en el Ocultismo: Parte I</p>
+                        <a href="https://www.youtube.com/watch?v=KS-EbVpKu5k" target="_blank">
+                            <img src="https://img.youtube.com/vi/KS-EbVpKu5k/0.jpg" alt="Consejos Prácticos al Iniciar en el Ocultismo" />
+                        </a>
+                    </div>
+                    <div class="video">
+                <p class="video-title">Consejos Prácticos al Iniciar en el Ocultismo: Parte II</p>
+                <a href="https://www.youtube.com/watch?v=G9RJTUntfAM" target="_blank">
+                    <img src="https://img.youtube.com/vi/G9RJTUntfAM/0.jpg" alt="Consejos Prácticos al Iniciar en el Ocultismo" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Los Tatuajes y la Magia: Los Símbolos de la Piel</p>
+                <a href="https://www.youtube.com/watch?v=Wi83NOA3U1E" target="_blank">
+                    <img src="https://img.youtube.com/vi/Wi83NOA3U1E/0.jpg" alt="Los Tatuajes y la Magia" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Las Vicisitudes del Sendero Siniestro</p>
+                <a href="https://www.youtube.com/watch?v=rcIA2V1ZvEk" target="_blank">
+                    <img src="https://img.youtube.com/vi/rcIA2V1ZvEk/0.jpg" alt="Las Vicisitudes del Sendero Siniestro" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Ritual de Destierro - Apertura y Establecimiento del Círculo</p>
+                <a href="https://www.youtube.com/watch?v=-mG-j9Ds1DQ" target="_blank">
+                    <img src="https://img.youtube.com/vi/-mG-j9Ds1DQ/0.jpg" alt="Las Vicisitudes del Sendero Siniestro" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Confirmaciones, signos y señales al trabajar</p>
+                <a href="https://www.youtube.com/watch?v=MxU3SUbhJ-M" target="_blank">
+                    <img src="https://img.youtube.com/vi/MxU3SUbhJ-M/0.jpg" alt=">Confirmaciones, signos" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Pautas para Elegir un Espíritu Guía en el Sendero Siniestro</p>
+                <a href="https://www.youtube.com/watch?v=USJc5-iDtGM" target="_blank">
+                    <img src="https://img.youtube.com/vi/USJc5-iDtGM/0.jpg" alt=">Pautas para Elegir un Espíritus" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Razones por las que se decide entrar en el Sendero Siniestro</p>
+                <a href="https://www.youtube.com/watch?v=Ur1G6rxDVvM" target="_blank">
+                    <img src="https://img.youtube.com/vi/Ur1G6rxDVvM/0.jpg" alt=">Pautas para Elegir un Espíritus" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Fraternitas Saturni: Historia, Filosofía, Principios</p>
+                <a href="https://www.youtube.com/watch?v=fbdUsBBWLlQ" target="_blank">
+                    <img src="https://img.youtube.com/vi/fbdUsBBWLlQ/0.jpg" alt=">Fraternitas Saturni" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Ofrendas a los Espíritus | Métodos & Comentarios</p>
+                <a href="https://www.youtube.com/watch?v=QK09Y8x4xHY" target="_blank">
+                    <img src="https://img.youtube.com/vi/QK09Y8x4xHY/0.jpg" alt=">Ofrendas a los Espíritus " />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">El Altar Siniestro</p>
+                <a href="https://www.youtube.com/watch?v=9B-JByT7wng" target="_blank">
+                    <img src="https://img.youtube.com/vi/9B-JByT7wng/0.jpg" alt=">El Altar Siniestro" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Ocultismo de Plástico</p>
+                <a href="https://www.youtube.com/watch?v=o92u_-eGiIc" target="_blank">
+                    <img src="https://img.youtube.com/vi/o92u_-eGiIc/0.jpg" alt=">Ocultismo de Plástico & Cristal" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Hécate - Señora Nocturna</p>
+                <a href="https://www.youtube.com/watch?v=29mrQaZozI0&t=1729s" target="_blank">
+                    <img src="https://img.youtube.com/vi/29mrQaZozI0/0.jpg" alt=">Hécate - Señora Nocturna" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Satanismo en Colombia</p>
+                <a href="https://www.youtube.com/watch?v=f9leeMGExX8" target="_blank">
+                    <img src="https://img.youtube.com/vi/f9leeMGExX8/0.jpg" alt=">Satanismo en Colombia" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">¿Magiak Sin Altar?</p>
+                <a href="https://www.youtube.com/watch?v=bdia2YKvt9w" target="_blank">
+                    <img src="https://img.youtube.com/vi/bdia2YKvt9w/0.jpg" alt=">¿Magiak Sin Altar?" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Sendero de la mano izquierda</p>
+                <a href="https://www.youtube.com/watch?v=9FlmjJ-2Rqk" target="_blank">
+                    <img src="https://img.youtube.com/vi/9FlmjJ-2Rqk/0.jpg" alt=">Sendero de la mano izquierda" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Liturgia Siniestra</p>
+                <a href="https://www.youtube.com/watch?v=65ooVNXZl0A" target="_blank">
+                    <img src="https://img.youtube.com/vi/65ooVNXZl0A/0.jpg" alt=">Liturgia Siniestra" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Akelarre del abismo</p>
+                <a href="https://www.youtube.com/watch?v=no4tXmAYZl0" target="_blank">
+                    <img src="https://img.youtube.com/vi/no4tXmAYZl0/0.jpg" alt=">Akelarre del abismo" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Magick en solitario</p>
+                <a href="https://www.youtube.com/watch?v=I0G241Z8kos" target="_blank">
+                    <img src="https://img.youtube.com/vi/I0G241Z8kos/0.jpg" alt=">Magick en solitario" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Lilith Pateon Infernal</p>
+                <a href="https://www.youtube.com/watch?v=7CfTqh8uTao" target="_blank">
+                    <img src="https://img.youtube.com/vi/7CfTqh8uTao/0.jpg" alt=">Lilith Pateon Infernal" />
+                </a>
+            </div>
+            <div class="video">
+                <p class="video-title">Culto a la Muerte y Ancentros</p>
+                <a href="https://www.youtube.com/watch?v=pUFRMEQwwZs" target="_blank">
+                    <img src="https://img.youtube.com/vi/pUFRMEQwwZs/0.jpg" alt=">Culto a la Muerte y Ancentros" />
+                </a>
+            </div>
+        </div>
+    </section>       
+    
+        
+            <section class="videos">
+                <h2>Lectura Siniestra</h2>
+                <div>
+                    <div class="video">
+                        <p class="video-title">Los Axiomas de la Magia</p>
+                        <a href="https://www.youtube.com/watch?v=YpWxlByXY5Q" target="_blank">
+                            <img src="https://img.youtube.com/vi/YpWxlByXY5Q/0.jpg" alt="Los Axiomas de la Magia" />
+                        </a>
+                    </div>
+                    <div class="video">
+                        <p class="video-title">Loa Axiomas de la Magia II</p>
+                        <a href="https://www.youtube.com/watch?v=IEpgmxG9gho" target="_blank">
+                            <img src="https://img.youtube.com/vi/IEpgmxG9gho/0.jpg" alt="Loa Axiomas de la Magia II" />
+                        </a>
+                    </div>
+                    <div class="video">
+                        <p class="video-title">Magia del Caos</p>
+                        <a href="https://www.youtube.com/watch?v=U_xZsawHVds" target="_blank">
+                            <img src="https://img.youtube.com/vi/U_xZsawHVds/0.jpg" alt="Magia del Caos" />
+                        </a>
+                    </div>
+                    <div class="video">
+                        <p class="video-title">Magia del Caos II</p>
+                        <a href="https://www.youtube.com/watch?v=Jiib7sEMxPI" target="_blank">
+                            <img src="https://img.youtube.com/vi/Jiib7sEMxPI/0.jpg" alt="Magia del Caos II" />
+                        </a>
+                    </div>
+                    <div class="video">
+                        <p class="video-title">Asenath Mason</p>
+                        <a href="https://www.youtube.com/watch?v=txeEa4JA0Cc" target="_blank">
+                            <img src="https://img.youtube.com/vi/txeEa4JA0Cc/0.jpg" alt="Asenath Mason" />
+                        </a>
+                    </div>
+                    <div class="video">
+                        <p class="video-title">Asenath Mason II</p>
+                        <a href="https://www.youtube.com/watch?v=0oISQB2bmds" target="_blank">
+                            <img src="https://img.youtube.com/vi/0oISQB2bmds/0.jpg" alt="Asenath Mason II" />
+                        </a>
+                    </div>
+                    <div class="video">
+                        <p class="video-title">Libri Magicae I</p>
+                        <a href="https://www.youtube.com/watch?v=FaKxpbMywFY" target="_blank">
+                            <img src="https://img.youtube.com/vi/FaKxpbMywFY/0.jpg" alt="Libri Magicae" />
+                        </a>
+                    </div>
+                    <div class="video">
+                        <p class="video-title">Libri Magicae II</p>
+                        <a href="https://www.youtube.com/watch?v=cKJb4kiXBmM" target="_blank">
+                            <img src="https://img.youtube.com/vi/cKJb4kiXBmM/0.jpg" alt="Libri Magicae II" />
+                        </a>
+                    </div>
+                    <div class="video">
+                        <p class="video-title">Principios de la Magiak</p>
+                        <a href="https://www.youtube.com/watch?v=ShPeZsQJfA4" target="_blank">
+                            <img src="https://img.youtube.com/vi/ShPeZsQJfA4/0.jpg" alt="Principios de la Magiak" />
+                        </a>
+                    </div>
+                    <div class="video">
+                        <p class="video-title">Escuelas de Magia</p>
+                        <a href="https://www.youtube.com/watch?v=feVdrxitu7k" target="_blank">
+                            <img src="https://img.youtube.com/vi/feVdrxitu7k/0.jpg" alt="Escuelas de Magia" />
+                        </a>
+                    </div>
+                    <div class="video">
+                        <p class="video-title">Mefistofeles</p>
+                        <a href="https://www.youtube.com/watch?v=DZCrzAk9pgk" target="_blank">
+                            <img src="https://img.youtube.com/vi/DZCrzAk9pgk/0.jpg" alt="Mefistofeles" />
+                        </a>
+                    </div>
+                    <div class="video">
+                        <p class="video-title">Lucifer</p>
+                        <a href="https://www.youtube.com/watch?v=K7pFwVgr2vk" target="_blank">
+                            <img src="https://img.youtube.com/vi/K7pFwVgr2vk/0.jpg" alt="Lucifer" />
+                        </a>
+                    </div>
+                    <div class="video">
+                        <p class="video-title">Beelzebub - Panteón Infernal</p>
+                        <a href="https://www.youtube.com/watch?v=DpUIMfWjXcA" target="_blank">
+                            <img src="https://img.youtube.com/vi/DpUIMfWjXcA/0.jpg" alt=">Beelzebub - Panteón Infernal" />
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </section>       
+
+
+
+    
+    <section id="projects">
+        <h2>Mis Proyectos</h2>
+        <div class="projects-grid">
+            <div class="project-item">
+                <h3>¡Que arda la llama negra! Un grimorio para el practicante siniestro</h3>
+                <p>Puedes comunicarte por instagram dando click a la imagen por si gustas comprar el libro o si gustas información.</p>
+                <br>
+                <a href="https://www.instagram.com/direct/t/114004269991547" target="_blank">
+                    <img src="images/ballena.jpg" alt="Proyecto 1" class="project-img">
+                </a>
+                          
+            </div>
+            <div class="project-item">
+                <h3>Ecos Del Abismo</h3>
+                <p>Ecos del Abismo, el cual es un espacio donde he pretendido difundir información relativa a la Magiak, el Ocultismo y la Espiritualidad desde un enfoque netamente Siniestro, dándole una total y absoluta relevancia a los discursos provenientes de las corrientes adjuntas al Sendero de la Mano Izquierda.</p>
+                <br>
+                <a href="https://www.youtube.com/@EcosdelAbismo/videos" target="_blank">
+                    <img src="images/pinguino.png" alt="Proyecto 1" class="project-img">
+                </a>
+            </div>
+            <div class="project-item">
+                <h3>Verbis Diabolos</h3>
+                <p>Las puertas han sido abiertas para que tanto plumas nuevas como antiguas de la Magiak, resuenen en las mentes y espíritus de aquellos que se sumergirían entre sus páginas, siguiendo el sinuoso camino de la oscuridad indicado por sus letras y delineado por sus párrafos. Este es una vez más, un esfuerzo por esparcir a Llama Negra y los Susurros de la Muerte hacia todos los rincones de este lado maldito del universo.</p>
+                <br>
+                <a href="https://www.instagram.com/verbisdiabolos/" target="_blank">
+                    <img src="images/academia.png" alt="Proyecto 1" class="project-img">
+                </a>
+            </div>
+            <div class="project-item">
+                <h3>Manufacturación de cajas y collares magicos personalizados</h3>
+                <p>Puedes comunicarte por instagram dando click a la imagen por si gustas comprar los collares o si gustas información.</p>
+                <br>
+                <a href="https://www.instagram.com/direct/t/114004269991547" target="_blank">
+                    <img src="images/collares.jpeg" alt="Proyecto 1" class="project-img">
+                </a>
+                          
+            </div>
+            <div class="project-item">
+                <h3>Lecturas de Tarot dependiendo de sus necesidades</h3>
+                <p>Puedes comunicarte por instagram dando click a la imagen si gustas de alguna lectura o información de precios de lectura.</p>
+                <br>
+                <a href="https://www.instagram.com/direct/t/114004269991547" target="_blank">
+                    <img src="images/Lectura.jpeg" alt="Proyecto 1" class="project-img">
+                </a>
+                          
+            </div>
+            <div class="project-item">
+                <h3>Camisas de Ecos del abismo, ¡Que arda la llama negra!</h3>
+                <p>Puedes comunicarte por instagram dando click a la imagen por si gustas comprar la camisas o si gustas información.</p>
+                <br>
+                <a href="https://www.instagram.com/direct/t/17843381909784713" target="_blank">
+                    <img src="images/camisas.jpeg" alt="Proyecto 1" class="project-img">
+                </a>
+                          
+            </div>
+            <div class="project-item">
+                <h3>Anima Satanae</h3>
+                <p>Puedes comunicarte por instagram dando click a la imagen por si gustas comprar el libro o si gustas información.</p>
+                <br>
+                <a href="https://www.instagram.com/p/CoaYlH8JMit/" target="_blank">
+                    <img src="images/animae.jpeg" alt="Proyecto 1" class="project-img">
+                </a>
+                          
+            </div>
+            <div class="project-item">
+                <h3>Sigilos</h3>
+                <p>Creación de sigilios con diferentes propositos.</p>
+                <br>
+                <a href="https://www.instagram.com/p/C0kiT8tLBtU/" target="_blank">
+                    <img src="images/sigil.jpeg" alt="Proyecto 1" class="project-img">
+                </a>
+                          
+            </div>
+            <div class="project-item">
+                <h3>Mi Compadre Del Abismo, Arcana XIII - Devotional Artefacts</h3>
+                <p>Con Arcana XIII, colaboramos también cuenta con sus ediciones de libros y artefactos. Le pueden dar un vistazo a su perfil dando click a la imagen.</p>
+                <br>
+                <a href="https://www.instagram.com/p/CRz08NvJjvh/" target="_blank">
+                    <img src="images/santa.jpeg" alt="Proyecto 1" class="project-img">
+                </a>
+                          
+            </div>
+        </div>
+    </section>
+
+    <section id="referencias-alumnos">
+        <h2>Referencias de la Comunidad de YouTube</h2>
+        <div class="opiniones-container">
+            <a href="https://www.youtube.com/watch?v=OPOzzx73plk" target="_blank" class="opinión">
+                <img src="images/wec.jpeg" alt="Foto de Alumno 1" class="foto-alumno">
+                <h3>milagrosnaranjo</h3>
+                <p>Buenas tardes Mateo. No sé  ni como he llegado  al tus vídeos pero me parecen  muy interesantes.  Yo soy  estudiante de cábala  y aunque recién he tomado un curso acerca de "el mal, la función  de las tinieblas" 
+                    No se habla  tan claro acerca de las tinieblas como tu lo heces. Como dicen los mismos cabalistas "como es arriba  es abajo" y yo personalmente pienso  que para  operar  bien en la fuerzas de arriba  no hay que subestimar  las de abajo, pues Dios como creador del universo  también es el creador de las tinieblas y ambos están  conectados  con un cordón irrompible. 
+                    Gracias por tus vídeos son muy interesantes.
+                    .</p>
+            </a>
+            
+            <a href="https://www.youtube.com/watch?v=gGHRsv6cZ0o" target="_blank" class="opinión">
+                <img src="images/qrex.jpeg" alt="Foto de Alumno 1" class="foto-alumno">
+                <h3>sodom3333</h3>
+                <p>“ Hola, buenísima charla, aunque no soy devoto de la santa muerte ni practicante del sendero siniestro (a veces creo que si) si hay que reconocer que en esta charla hay muchas reflexiones que deberíamos tener siempre sin importar que sendero o práctica tengamos, son como puntos comunes que deberíamos analizar desde nuestras orillas, maravillosa información y gracias a Mateo ymoablo con regalarnos esta charla. Saludos desde Cali.”</p>
+            </a>
+            <a href="https://www.youtube.com/watch?v=OPOzzx73plk" target="_blank" class="opinión">
+                <img src="images/quehace.jpeg" alt="Foto de Alumno 1" class="foto-alumno">
+                <h3>NiniHitchcock09</h3>
+                <p>“Ecos del abismo, primero que nada quería felicitarte y agradecerte por tu canal, me parece que es de excelente calidad. Quería preguntarte cual es la diferencia en cuanto a desarrollo de los chakras al realizar estos mantras oscuros a usar los mantras tradicionales, tu dirias que estos mantras ahrimanicos son más poderosos?   Respuesta de Ecos: Muchas gracias por tus comentarios y palabras. Difieren no sólo en la intención que le das de activarlo desde el Lado Nocturno, tiene un particularidad este y cualquier otro sistema de trabajo Kundalini desde el SMI, y es que cuando llegas al chacra de la corona; la parte superior de la cabeza, en lugar de hacer uno con el universo, el famoso "nirvana", pasas más allá del universo a la fuente oscura de donde todo y nada proviene, logrando de esa manera una absorción de energía "acausal" si se quiere ver en esos términos y un alejamiento de las estructuras demiurgicas, de la matrix o las divinidades lumínicas que mantiene el universo en orden, permitiéndote entrar en el caos primordial.”</p>
+            </a> 
+            <a href="https://www.youtube.com/watch?v=npZqNbQvcx4" target="_blank" class="opinión">
+                <img src="images/mando.jpeg" alt="Foto de Alumno 1" class="foto-alumno">
+                <h3>jorgefonseca1710</h3>
+                <p>“Desde hace años  le leído en los libros de Carlos Castañeda estos conceptos. Hasta ahora que me interesa iniciarme en este sendero noto su importancia ... le sigo señor mateo y gracias por compartir sus experiencias y conocimiento, ya que en Mexico no hay muchos lugares en el que uno pueda instruirse en estos temas.”</p>
+            </a>
+            <a href="https://www.youtube.com/watch?v=npZqNbQvcx4" target="_blank" class="opinión oculta">
+                <img src="images/comando.jpeg" alt="Foto de Alumno 1" class="foto-alumno">
+                <h3>thehumanoideZ</h3>
+                <p>“Excelente, práctico y directo al grano. espero que puedas hablarnos sobre como abrir el tercer ojo ( ya que para las evocaciones y mantener conversación con los Daemones necesitamos esa videncia para poder escucharlos y verlos), y también sobre como descender por las Qliphot. Respuesta de Ecos: Muchas gracias por tu comentario en efecto, la idea es poder trabajarlo desde el Ojo de Shiva o Lucifer o directamente con el Ojo del Vacío, y claro que sí, ya estoy preparando un vídeo para hacer todo el mapa del árbol qlifótico, quizás luego me anime a hablar de los 22 caminos que conectan con cada esfera, pero serian varias series de vídeos por lo extenso y amplio del tema, gracias por tu comentario y aporte, ¡Que Arda la Llama Negra!”</p>
+            </a>
+            <a href="https://www.youtube.com/watch?v=npZqNbQvcx4" target="_blank" class="opinión oculta">
+                <img src="images/hey.jpeg" alt="Foto de Alumno 1" class="foto-alumno">
+                <h3>leonardollano5298</h3>
+                <p>“Hola me presento me llamo leonardo tengo 23 .la verdad es que es muy larga la historia de como estoy aca en tu canal multiples experiencias alo largo de mi vida me trajeron a este mundo del ocultismo fui rebotando de creencia en creencia a medida que uno adquiere conocimiento y les es mostrada la verdad va dejando creencias falsas..como a ti seguro te a pasado desde la infancia uno es llamado a este mundo oculto y gracias ala comunicacion que poseemos hoy dia pude investigar mis dudas,siempre investigando cuando pude debido a las exigencias del dia diario que una persona debe llevar y cumplir ya sea trabajo pareja familia etc... esta de mas decir que los viajes astrales y experiencias paranormales siempre me han sucedido..y lamentablemente no tengo absolutamente nadie en mi entorno que sepa una mierda de todo esto y menos que lo comprenda.asi que el dia de hoy me siento fuertemente atraido a este sendero y pretendo autoiniciarme pero no se por donde empezar ¿que me recomiendas?ah por cierto queria agradecerte por el tiempo y esfuerzo empleado en hacer los videos de tu canal haciendo de portador de luz para la gente que busca saber, se te compensara de seguro. Respuesta de Ecos del abismo: Saludos Leonardo muchas gracias por tus comentarios y por compartir tus experiencias, efectivamente todo lo que dices es así, pero ahora los tiempos han cambiado y podemos generar este tipo de espacios, yo te recomiendo que por el momento veas los diferentes vídeos que he ido subiendo a Ecos del Abismo, sobre todo aquellos que tienen que ver con meditación y control de chakras, en próximas semanas subiré un vídeo sobre una autoiniciación que puede hacerse para entrar en contacto directo con estas energías.”</p>
+            </a>
+            <a href="https://www.youtube.com/watch?v=gGHRsv6cZ0o" target="_blank" class="opinión oculta">
+                <img src="images/sant.jpeg" alt="Foto de Alumno 1" class="foto-alumno">
+                <h3>CaroKan</h3>
+                <p>Que genial volver a escuchar a Pablo en tu compañía Mateo.
+                    El culto a La Señora necesita un exponente serio y entregado al 100% más allá de solo conseguir 15 minutos de fama.
+                    Un abrazo y que arda la Llama Negra 🔥 🖤”</p>
+            </a>
+            <a href="https://www.youtube.com/watch?v=OPOzzx73plk" target="_blank" class="opinión oculta">
+                <img src="images/proviene.jpeg" alt="Foto de Alumno 1" class="foto-alumno">
+                <h3>sakurafire32</h3>  sakurafire32
+                <p>“Gracias por tus vídeos, son bastante interesantes, no me interesa hacer parte de estas creencias pero bien que es llamativo investigar acerca de ello,  ya que es cultura general, sigue así! Saludos desde Bogotá.”</p>
+            </a>
+        </div>
+        <button id="ver-mas" style="display: none;">Ver más</button>
+        <button id="ver-menos" style="display: none;">Ver menos</button>        
+    </section>
+
+    <section id="comunidad">
+        <h2>Nuestra Comunidad</h2>
+        <div class="comunidad-cards">
+          <div class="card">
+            <img src="images/patreonj.png" alt="Discord" class="card-icon">
+            <h3>Únete a nuestro Patreon</h3>
+            <p>Conéctate con nuestra comunidad donde puedes encontrar temas de magia que no se pueden tocar en otra red social.</p>
+            <a href="https://www.patreon.com/ecosdelabismo" target="_blank" class="btn">Entrar al Patreon</a>
+          </div>
+          <div class="card">
+            <img src="images/face.png" alt="Telegram" class="card-icon">
+            <h3>Únete a nuestro Facebook</h3>
+            <p>Ve a nuestra web de facebook para estar informados de otros temas y imagenes.</p>
+            <a href="https://www.facebook.com/ecosdelabismo" target="_blank" class="btn">Entrar al Facebook</a>
+          </div>
+          <div class="card">
+            <img src="images/dea.jfif" alt="Discord" class="card-icon">
+            <h3>Únete a nuestro Discord</h3>
+            <p>Encuentra variedad de información y contenido.</p>
+            <a href="https://www.instagram.com/ecosdelabismo/" target="_blank" class="btn">Entrar al Instagram</a>
+          </div>
+          <div class="card">
+            <img src="images/telegram.webp" alt="Telegram" class="card-icon">
+            <h3>Únete a nuestro Telegram</h3>
+            <p>Únete a nuestra comunidad de Telegram.</p>
+            <a href="https://t.me/elakelarredelabismo" target="_blank" class="btn">Entrar al Telegram</a>
+          </div>
+        </div>
+    </section>
+      
+
+      
+  <section id="social-media">
+    <h3>Sígueme en mis redes sociales</h3>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/ecosdelabismo" target="_blank" class="social-icon">
+            <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.patreon.com/ecosdelabismo" target="_blank" class="social-icon">
+            <i class="bi bi-link"></i>
+        </a>        
+        <a href="https://www.facebook.com/ecosdelabismo" class="social-icon">
+            <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://www.paypal.com/paypalme/ecosdelabismo?locale.x=es_XC" target="_blank" class="social-icon">
+            <i class="bi bi-paypal"></i>
+        </a>        
+        <a href="https://www.youtube.com/@EcosdelAbismo/videos" target="_blank" class="social-icon">
+            <i class="bi bi-youtube"></i>
+        </a>
+        <a href="https://t.me/elakelarredelabismo" target="_blank" class="social-icon">
+            <i class="bi bi-telegram"></i>
+        </a>        
+    </div>
+</section>
+
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 text-start">
+                    <p>&copy; 2024 - Todos los derechos reservados</p>
+                </div>
+                
+                <div class="col-4 text-end">
+                    <p style="color: white; font-weight: bold;">
+			            Powered By 
+			            <a href="https://www.instagram.com/xdeghost/" target="_blank" rel="noopener noreferrer" style="color: white; font-weight: bold;">
+                            xdeghost
+			            </a>
+		            </p>
+                </div>
+            </div>
+        </div>
+        <!-- Efecto de olas -->
+        <div class="wave-container">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+        </div>
+    </footer>
+    
+    <script src="scripts/script.js"></script>
+    <script src="scripts/popup.js"></script>
+    <script src="scripts/ver-mas.js"></script>
+
+</body>
+</html>
+
+<style>
+    /* Aquí pega el código CSS que te di arriba */
+    </style>
+    
