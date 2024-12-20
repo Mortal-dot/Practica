@@ -442,3 +442,47 @@ body {
 }
 
 
+/* Barra de navegación principal */
+nav {
+    background-color: #333; /* Puedes cambiar este color al que prefieras */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Usa flexbox para organizar los elementos en una fila */
+    justify-content: center; /* Centra los elementos de la lista */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaciado entre los elementos */
+}
+
+nav ul li a {
+    color: white; /* Color del texto */
+    text-decoration: none;
+    font-size: 1.2rem; /* Tamaño del texto */
+    transition: color 0.3s ease; /* Efecto al pasar el cursor */
+}
+
+nav ul li a:hover {
+    color: #f0f0f0; /* Color cuando el cursor pasa sobre el enlace */
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Cambia la dirección a columna */
+        align-items: center; /* Centra los elementos de la lista en columna */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Ajusta el espaciado para que no se amontonen */
+    }
+
+    nav ul li a {
+        font-size: 1.5rem; /* Aumenta el tamaño del texto en pantallas pequeñas */
+    }
+}
