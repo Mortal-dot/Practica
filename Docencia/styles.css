@@ -232,8 +232,9 @@ section h2 {
     background-color: #050101; /* Fondo negro */
     color: #ffffff; /* Texto blanco */
     text-align: center; /* Centrar texto */
-    padding: 20px; /* Reduce el espacio alrededor del contenido */
-    height: 300px; /* Ajusta la altura para que sea más pequeña */
+    padding: 40px; /* Aumenta el espacio alrededor del contenido */
+    height: auto; /* Ajuste automático de la altura según el contenido */
+    min-height: 400px; /* Asegura que la altura sea al menos 400px, pero puede extenderse más si hay más contenido */
 }
 
 .social-buttons {
@@ -302,7 +303,7 @@ footer {
     position: relative;
     background-color: #282828;
     color: #fff;
-    padding: 40px 20px; /* Ajusta el padding superior e inferior */
+    padding: 20px 20px; /* Reduce el padding para que el footer sea más pequeño */
     overflow: hidden; /* Asegúrate de que el efecto no se desborde */
     font-family: Arial, sans-serif; /* Asegúrate de usar una fuente legible */
     letter-spacing: 0.5px; /* Añadir espaciado entre letras para mejor legibilidad */
@@ -321,7 +322,7 @@ footer .container {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 120px; /* Ajusta la altura de la ola */
+    height: 80px; /* Reduce la altura de la ola para que ocupe menos espacio */
     overflow: hidden;
     z-index: 1; /* Asegúrate de que el efecto esté detrás del contenido */
 }
@@ -331,7 +332,7 @@ footer .container {
     position: absolute;
     left: 50%;
     width: 200%;
-    height: 100px; /* Por aquí puedo ajustar la altura de la ola */
+    height: 70px; /* Reduce la altura de la ola */
     background: linear-gradient(to right, rgba(180, 170, 26, 0.893) 0%, rgba(200, 161, 35, 0.938) 50%, rgb(192, 184, 34) 100%);
     border-radius: 50%;
     transform: translateX(-50%);
@@ -339,7 +340,7 @@ footer .container {
 }
 
 .wave.wave2 {
-    height: 150px; /* Mayor altura para olas más pronunciadas */
+    height: 100px; /* Reduce la altura para olas más suaves */
     background: linear-gradient(to right, rgba(210, 193, 26, 0.982) 0%, rgba(200, 185, 29, 0.776) 50%, rgba(200, 196, 34, 0.2) 100%);
     animation: wave 15s linear infinite;
 }
@@ -349,12 +350,28 @@ footer .container {
         transform: translateX(-50%) translateY(0);
     }
     50% {
-        transform: translateX(-50%) translateY(20px); /* Mayor desplazamiento vertical para olas más pronunciadas */
+        transform: translateX(-50%) translateY(15px); /* Menor desplazamiento vertical para olas menos pronunciadas */
     }
     100% {
         transform: translateX(-50%) translateY(0);
     }
 }
+
+/* Adaptabilidad para pantallas pequeñas */
+@media (max-width: 768px) {
+    footer {
+        padding: 15px 10px; /* Reduce un poco más el padding en pantallas pequeñas */
+    }
+
+    footer .container {
+        text-align: left; /* Cambia la alineación del texto a la izquierda en pantallas pequeñas */
+    }
+
+    footer .container p {
+        font-size: 0.9em; /* Ajusta el tamaño del texto */
+    }
+}
+
 
 /* Media queries para pantallas móviles */
 @media (max-width: 768px) {
