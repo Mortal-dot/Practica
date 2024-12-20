@@ -442,97 +442,16 @@ body {
     }
 }
 
-
-
-    .visible-images img {
-        width: 60px; /* Tamaño de las imágenes en móviles pequeños */
-        height: auto; /* Mantener la relación de aspecto */
-    }
-
-    #seccion-galeria {
-        padding: 10px; /* Reducir espaciado interno en móviles pequeños */
-    }
-
-
-}
-
-#social-media {
-    margin-top: 20px; /* Ajusta el valor según necesites */
-}        
-
-/* Estilos generales para pantallas grandes */
-body {
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-/* Estilos para pantallas móviles (menos de 768px de ancho) */
-@media (max-width: 768px) {
-    body {
-        font-size: 14px; /* Opcional: ajusta el tamaño de fuente para móviles */
-    }
-    
-    .container {
-        text-align: right; /* Alinea el texto a la derecha */
-        width: 100%; /* Puede ajustarse para que ocupe todo el ancho de la pantalla */
-        padding-right: 10px; /* Añade un poco de espacio a la derecha si es necesario */
-    }
-}
-
- /* Estilos generales para pantallas grandes */
-body {
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-/* Estilos para pantallas móviles (menos de 768px de ancho) */
-@media (max-width: 768px) {
-    body {
-        font-size: 14px; /* Reduce el tamaño de la fuente para móviles */
-    }
-    
-    .container {
-        text-align: right; /* Alinea el texto a la derecha */
-        width: 100%; /* Usa el 100% del ancho disponible */
-        padding-right: 10px; /* Añade un poco de espacio a la derecha */
-        word-wrap: break-word; /* Evita que las palabras largas se desborden */
-        overflow-wrap: break-word; /* Alternativa más moderna */
-        box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
-    }
-
-    /* Ajustar el tamaño de la fuente según el ancho */
-    h1, h2, h3, p { 
-        font-size: 14px; /* Ajusta el tamaño de texto en los encabezados y párrafos */
-    }
-
-    /* Si se necesitan márgenes para mejorar la legibilidad */
-    h1, h2, h3, p {
-        margin: 10px 0; /* Márgenes para separar los textos */
-    }
-}
- 
 /* Estilos para el contenedor de la imagen de fondo */
 .hero-background {
     position: fixed; /* Fija la imagen en su lugar */
     top: 0;
     left: 0;
-    width: 100%; /* Imagen de fondo cubre todo el ancho */
+    width: 400%; /* Imagen de fondo cubre todo el ancho */
     height: 100vh; /* La altura será igual a la altura de la ventana */
     background-image: url('yo.jpg'); /* Ruta de la imagen en la misma carpeta */
     background-size: cover; /* La imagen cubre todo el área sin deformarse */
-    background-position: center top; /* Asegura que la imagen se posicione correctamente en la parte superior */
+    background-position: top center; /* Asegura que la imagen se posicione correctamente en la parte superior */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     z-index: -1; /* Coloca la imagen de fondo detrás del contenido */
 }
@@ -540,8 +459,51 @@ body {
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
     .hero-background {
-        background-position: center top; /* Mantiene la imagen alineada en la parte superior */
+        background-position: top center; /* Mantiene la imagen alineada en la parte superior */
         background-size: cover; /* La imagen se ajusta al tamaño de la pantalla */
         background-attachment: scroll; /* Cambiar a scroll para evitar problemas con móviles */
+    }
+}
+
+/* Estilos generales para la sección */
+.hero-section {
+    position: relative; /* Establece el contexto para posicionar el contenido sobre la imagen */
+    width: 100%; /* Asegura que ocupe todo el ancho de la ventana */
+    height: 100vh; /* La sección ocupa todo el alto de la ventana */
+    overflow: hidden; /* Asegura que la imagen no se desborde fuera de la sección */
+}
+
+/* Estilo para la imagen */
+.image {
+    position: absolute; /* Permite que la imagen se coloque en el fondo */
+    top: 0;
+    left: 0;
+    width: 100%; /* La imagen ocupa todo el ancho */
+    height: 100%; /* La imagen ocupa todo el alto */
+    object-fit: cover; /* La imagen cubre toda el área sin distorsionarse */
+}
+
+/* Estilo del contenido sobre la imagen */
+.hero-content {
+    position: absolute; /* Posiciona el contenido sobre la imagen */
+    top: 50%; /* Posiciona el contenido en el centro verticalmente */
+    left: 50%; /* Posiciona el contenido en el centro horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para centrar perfectamente */
+    text-align: center; /* Alinea el texto al centro */
+    color: white; /* Cambia el color del texto para que sea visible sobre la imagen */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente para hacer el texto más legible */
+    padding: 20px; /* Espacio alrededor del texto */
+}
+
+/* Media query para pantallas móviles */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 1.5em; /* Reduce el tamaño del título en pantallas pequeñas */
+    }
+    .hero-content h2 {
+        font-size: 1.2em; /* Reduce el tamaño del subtítulo en pantallas pequeñas */
+    }
+    .hero-content h3 {
+        font-size: 1em; /* Reduce el tamaño del texto en pantallas pequeñas */
     }
 }
