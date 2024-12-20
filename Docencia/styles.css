@@ -444,14 +444,17 @@ body {
 
 /* Barra de navegación principal */
 nav {
-    background-color: #333; /* Puedes cambiar este color al que prefieras */
+    background-color: #333; /* Cambia el color de fondo si lo deseas */
     padding: 10px 0;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    position: relative; /* Garantiza que no se quede fijo ni se superponga */
+    z-index: 10; /* Mantiene la navegación por encima de otros elementos */
 }
 
 nav ul {
     list-style: none;
-    display: flex; /* Usa flexbox para organizar los elementos en una fila */
-    justify-content: center; /* Centra los elementos de la lista */
+    display: flex; /* Disposición en fila por defecto */
+    justify-content: center;
     margin: 0;
     padding: 0;
 }
@@ -464,25 +467,25 @@ nav ul li a {
     color: white; /* Color del texto */
     text-decoration: none;
     font-size: 1.2rem; /* Tamaño del texto */
-    transition: color 0.3s ease; /* Efecto al pasar el cursor */
+    transition: color 0.3s ease; /* Transición al pasar el mouse */
 }
 
 nav ul li a:hover {
-    color: #f0f0f0; /* Color cuando el cursor pasa sobre el enlace */
+    color: #f0f0f0; /* Color cuando el mouse pasa por encima */
 }
 
-/* Media Query para pantallas pequeñas */
+/* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column; /* Cambia la dirección a columna */
-        align-items: center; /* Centra los elementos de la lista en columna */
+        flex-direction: column; /* Organiza los elementos en columna */
+        align-items: center; /* Centra los elementos en la columna */
     }
 
     nav ul li {
-        margin: 10px 0; /* Ajusta el espaciado para que no se amontonen */
+        margin: 10px 0; /* Ajusta el margen entre los elementos en columna */
     }
 
     nav ul li a {
-        font-size: 1.5rem; /* Aumenta el tamaño del texto en pantallas pequeñas */
+        font-size: 1.5rem; /* Aumenta el tamaño de los enlaces en pantallas pequeñas */
     }
 }
