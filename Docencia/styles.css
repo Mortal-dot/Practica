@@ -19,7 +19,7 @@ h1, h2, h3, p {
 /* Estilos para el header */
 header {
     background-color: rgba(0, 0, 0, 0); /* Fondo completamente transparente */
-    padding: 5px;
+    padding: 5px 20px; /* Añadimos un poco de relleno en los laterales */
     color: #fff;
     position: fixed; /* Mantiene el header en la parte superior */
     width: 100%;
@@ -27,17 +27,21 @@ header {
     left: 0;
     z-index: 10;
     transition: transform 0.3s ease; /* Transición para suavizar el ocultamiento/mostrado */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añadimos una sombra sutil para mejorar la visibilidad */
 }
 
+/* Estilos para la navegación */
 nav {
-    text-align: left; /* Alinea el contenido del nav a la izquierda */
-    margin-left: 20px; /* Margen izquierdo para separar del borde */
-    margin-top: 20px; /* Margen superior para mover los botones hacia abajo */
+    display: flex;
+    justify-content: flex-start; /* Alinea los elementos hacia la izquierda */
+    align-items: center;
+    margin-top: 10px; /* Un pequeño margen superior */
 }
 
+/* Estilos para la lista no ordenada de enlaces */
 nav ul {
     list-style: none;
-    display: flex; /* Alinea los elementos de la lista en una línea */
+    display: flex; /* Alinea los elementos de la lista en una línea horizontal */
     padding: 0; /* Elimina el padding de la lista */
     margin: 0; /* Elimina el margen de la lista */
 }
@@ -50,8 +54,36 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    font-size: 16px; /* Asegura que el tamaño del texto sea adecuado */
 }
 
+/* Media Query para pantallas más pequeñas (móviles) */
+@media (max-width: 768px) {
+    /* Ajustamos la navegación en pantallas pequeñas */
+    header {
+        padding: 5px 10px; /* Reduce un poco el padding en pantallas pequeñas */
+    }
+
+    nav {
+        margin-left: 0; /* Quitamos el margen izquierdo extra */
+        margin-top: 10px; /* Un margen pequeño para los dispositivos móviles */
+    }
+
+    nav ul {
+        display: flex; /* Mantiene los elementos en una fila */
+        flex-wrap: wrap; /* Asegura que los elementos no se salgan del contenedor */
+        justify-content: flex-start; /* Alinea los elementos hacia la izquierda */
+    }
+
+    nav ul li {
+        margin-right: 15px; /* Reduce el margen entre los enlaces */
+    }
+
+    nav ul li a {
+        font-size: 14px; /* Reduce el tamaño de la fuente en móviles */
+        padding: 8px 12px; /* Ajusta el área táctil */
+    }
+}
 
 
 /* Estilos para la hero section - web principal*/
