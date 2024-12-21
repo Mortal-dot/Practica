@@ -909,28 +909,15 @@ body {
 
 /* Solo para dispositivos móviles (máximo 768px) */
 @media (max-width: 768px) {
+
     /* Estilos para la hero section en móviles */
     .hero-content h1 {
         font-size: var(--font-size-small); /* Tamaño de texto pequeño */
     }
 
-    .hero-content h2 {
-        font-size: 1.6rem; /* Tamaño de texto más pequeño para h2 */
-    }
-
-    .hero-content h3 {
-        font-size: 1.4rem; /* Tamaño de texto más pequeño para h3 */
-    }
-
-    .hero-content p {
-        font-size: 1rem; /* Tamaño de texto más pequeño para el párrafo */
-    }
-
     /* Estilos para los proyectos en grid en móviles */
     .projects-grid {
         grid-template-columns: 1fr; /* Un solo elemento por fila */
-        gap: 15px; /* Menos espacio entre elementos */
-        padding: 15px; /* Menos padding */
     }
 
     /* Estilos para los elementos de proyecto en móviles */
@@ -965,14 +952,6 @@ body {
         line-height: 1.5; /* Aumenta el espaciado entre líneas */
         padding: 0 10px; /* Añadir padding lateral */
     }
-
-    /* Ajustes de padding para la hero section en móviles */
-    .hero-content {
-        padding: 40px 15px;
-    }
 }
-
-/* No hay necesidad de media queries para pantallas mayores a 768px */
-
 
 
