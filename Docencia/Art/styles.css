@@ -715,3 +715,60 @@ body {
     }
 }
 
+/* Media Queries para Responsividad (para dispositivos móviles) */
+@media (max-width: 768px) {
+
+    /* Títulos de los proyectos */
+    #projects h2 {
+        font-size: 24px;  /* Tamaño de fuente más pequeño */
+        text-align: center; /* Centrar el título */
+        margin-bottom: 20px;
+    }
+
+    .project-item h3 {
+        font-size: 18px;  /* Tamaño de los encabezados de los proyectos */
+        text-align: center; /* Centrar los títulos de los proyectos */
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .project-item p {
+        font-size: 14px;  /* Tamaño de texto para la descripción */
+        line-height: 1.5;  /* Espaciado entre líneas para mayor legibilidad */
+        color: #ccc;  /* Color gris claro para las descripciones */
+        margin-bottom: 15px;
+    }
+
+    /* Ajustar el tamaño de las imágenes de los proyectos */
+    .project-img {
+        width: 100%; /* Asegura que la imagen ocupe el 100% del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+        border-radius: 8px; /* Bordes redondeados */
+    }
+
+    /* Hacer que los proyectos estén en una columna */
+    .projects-grid {
+        grid-template-columns: 1fr;  /* Una sola columna para los proyectos */
+        gap: 15px; /* Reduce el espacio entre los elementos */
+        padding: 10px; /* Espaciado dentro del grid */
+    }
+
+    /* Espaciado para los items de proyectos */
+    .project-item {
+        padding: 10px; /* Añadir algo de espacio dentro de cada item */
+        background-color: #222;  /* Fondo oscuro para cada item */
+        border-radius: 8px; /* Bordes redondeados */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    }
+
+    /* Espaciado para los enlaces */
+    .project-item a {
+        display: block;
+        text-align: center;
+    }
+
+    /* Asegura que la lista de proyectos tenga márgenes adecuados */
+    .projects-grid {
+        margin-bottom: 20px; /* Separar la sección de proyectos del pie de página */
+    }
+}
