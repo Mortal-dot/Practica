@@ -495,7 +495,7 @@ section h2 {
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Espacio entre los iconos */
+    gap: 20px; /* Espacio entre los iconos en pantallas grandes */
 }
 
 .social-icon {
@@ -507,6 +507,21 @@ section h2 {
 .social-icon:hover {
     color: #f7c600; /* Color amarillo al pasar el cursor */
 }
+
+/* Media Queries para Responsividad */
+
+/* Solo para dispositivos móviles (máximo 768px) */
+@media (max-width: 768px) {
+    /* Ajuste de espacio entre iconos en móviles */
+    .social-icons {
+        gap: 10px; /* Menor espacio entre los iconos */
+    }
+
+    .social-icon {
+        font-size: 1.5em; /* Reduce el tamaño de los iconos en móviles */
+    }
+}
+
 
 
 
