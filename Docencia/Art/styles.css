@@ -279,7 +279,7 @@ nav ul li a {
 /* Nueva sección de separación */
 .separator {
     height: 150px; /* Altura de la sección */
-    background-color: #978908; /* Color de fondo amarillo/naranja vibrante */
+    background-color: #998c00; /* Color de fondo amarillo/naranja vibrante */
     width: 100%; /* Ancho completo */
     display: flex; /* Usar flexbox para alinear los elementos */
     justify-content: center; /* Centrar horizontalmente */
@@ -292,12 +292,14 @@ nav ul li a {
     align-items: center; /* Centrar verticalmente */
 }
 
+/* Estilos para el texto dentro de la content-container */
 .content-container p {
     margin: 0; /* Eliminar márgenes */
     text-align: left; /* Alinear a la izquierda */
     margin-right: 20px; /* Espacio entre el párrafo y el botón */
 }
 
+/* Estilo para el botón CTA */
 .cta-button {
     background-color: #000000; /* Color de fondo del botón en naranja más oscuro */
     color: #ffffff; /* Texto blanco para el botón */
@@ -310,6 +312,54 @@ nav ul li a {
 
 .cta-button:hover {
     background-color: #E65C00; /* Color de fondo del botón al pasar el ratón (más oscuro) */
+}
+
+/* Media Queries para Responsividad */
+
+/* Solo para dispositivos móviles (máximo 768px) */
+@media (max-width: 768px) {
+    .separator {
+        height: 120px; /* Reduce la altura para móviles */
+        padding: 10px; /* Menos padding en móviles */
+    }
+
+    .content-container {
+        flex-direction: column; /* Cambia la disposición a columna en móviles */
+        text-align: center; /* Centra el texto en dispositivos móviles */
+    }
+
+    .content-container p {
+        margin-right: 0; /* Eliminar espacio a la derecha */
+        margin-bottom: 15px; /* Espacio entre el texto y el botón */
+        font-size: 14px; /* Fuente más pequeña */
+    }
+
+    .cta-button {
+        font-size: 14px; /* Fuente más pequeña para el botón */
+        padding: 8px 15px; /* Menos padding en botones en móviles */
+    }
+}
+
+/* Solo para dispositivos de escritorio (PC) - a partir de 769px */
+@media (min-width: 769px) {
+    .separator {
+        height: 150px; /* Altura estándar en computadoras */
+    }
+
+    .content-container {
+        flex-direction: row; /* Mantiene los elementos en fila */
+        text-align: left; /* Mantiene el texto alineado a la izquierda */
+    }
+
+    .content-container p {
+        font-size: 18px; /* Fuente más grande para computadoras */
+        margin-right: 20px; /* Espacio adecuado entre texto y botón */
+    }
+
+    .cta-button {
+        font-size: 16px; /* Fuente de tamaño normal */
+        padding: 12px 25px; /* Padding más amplio para computadoras */
+    }
 }
 
 
@@ -786,16 +836,5 @@ body {
         font-size: 13px;  /* Reducir el tamaño del texto */
         line-height: 1.5;  /* Ajustar interlineado */
     }
-}
-
-/* Definir variables para colores y fuentes */
-:root {
-    --primary-color: #FF5722; /* Color principal */
-    --secondary-color: #673AB7; /* Color secundario */
-    --font-family: 'Fira Code', monospace; /* Fuente */
-    --font-size-large: 36px; /* Tamaño grande */
-    --font-size-medium: 30px; /* Tamaño medio */
-    --font-size-small: 24px; /* Tamaño pequeño */
-    --padding: 10px; /* Relleno */
 }
 
