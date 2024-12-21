@@ -955,3 +955,95 @@ body {
 }
 
 
+/* Media Query para pantallas grandes (PC) */
+@media (min-width: 769px) {
+    
+    /* Ajustar tamaño de los encabezados en la hero section */
+    .hero-content h1 {
+        font-size: var(--font-size-large); /* Tamaño grande para h1 en pantallas grandes */
+    }
+
+    .hero-content h2 {
+        font-size: 2rem; /* Tamaño más grande para h2 */
+    }
+
+    .hero-content h3 {
+        font-size: 1.6rem; /* Tamaño más grande para h3 */
+    }
+
+    .hero-content p {
+        font-size: 1.2rem; /* Tamaño más grande para el párrafo */
+    }
+
+    /* Hero Section: Ajustes generales */
+    .hero-content {
+        padding: 80px 40px; /* Espaciado más grande en PC */
+        text-align: left; /* Alineación a la izquierda */
+    }
+
+    /* Estilos de los proyectos en grid para pantallas grandes */
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Varias columnas en PC */
+        gap: 30px; /* Espacio mayor entre los elementos */
+        padding: 40px; /* Padding más grande */
+    }
+
+    /* Estilo para los items de los proyectos en PC */
+    .project-item {
+        margin: 0;
+        padding: 20px;
+        background-color: #333; /* Fondo más oscuro */
+        border-radius: 10px;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
+
+    /* Efecto hover para los items de proyectos en PC */
+    .project-item:hover {
+        transform: translateY(-15px); /* Efecto más destacado */
+    }
+
+    /* Estilo para los botones CTA en pantallas grandes */
+    .cta-button {
+        font-size: 16px; /* Fuente más grande */
+        padding: var(--padding) 25px; /* Más padding */
+        background-color: var(--primary-color);
+    }
+
+    .cta-button:hover {
+        background-color: var(--secondary-color); /* Cambio de color al pasar el mouse */
+    }
+
+    /* Estilo para los encabezados de los proyectos */
+    .project-title {
+        font-size: var(--font-size-medium); /* Mantén el tamaño del título en PC */
+        text-align: left; /* Alineación a la izquierda */
+        margin-bottom: 10px;
+    }
+
+    /* Estilos para las descripciones de los proyectos en PC */
+    .project-description {
+        font-size: 18px;
+        color: #ddd;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    /* Ajustes para las imágenes de los proyectos en PC */
+    .project-img {
+        width: 100%; /* Imágenes de tamaño completo */
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    /* Hero section: Video de fondo en pantallas grandes */
+    #bg-video {
+        object-fit: cover;
+    }
+
+    /* Ajustes adicionales para los márgenes y espaciados generales en PC */
+    .container {
+        margin-top: 40px; /* Más espacio superior */
+    }
+}
