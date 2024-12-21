@@ -884,3 +884,99 @@ body {
     }
 }
 
+/* Nueva sección de separación */
+.separator {
+    height: 150px; /* Altura de la sección */
+    background-color: #998c00; /* Color de fondo amarillo/naranja vibrante */
+    width: 100%; /* Ancho completo */
+    display: flex; /* Usar flexbox para alinear los elementos */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    color: #2D2D2D; /* Color del texto oscuro para mejor legibilidad */
+}
+
+.content-container {
+    display: flex; /* Usar flexbox para alinear el contenido */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Asegura que todo el contenido se centre */
+    width: 100%; /* Ocupa todo el ancho */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a nuevas líneas si es necesario */
+}
+
+/* Estilos para el texto dentro de la content-container */
+.content-container p {
+    margin: 0; /* Eliminar márgenes */
+    text-align: left; /* Alinear a la izquierda */
+    margin-right: 20px; /* Espacio entre el párrafo y el botón */
+    white-space: normal; /* Permite que el texto se divida en varias líneas si es necesario */
+    overflow: visible; /* Asegura que el texto no se oculte */
+    text-overflow: unset; /* Elimina los puntos suspensivos */
+}
+
+/* Estilo para el botón CTA */
+.cta-button {
+    background-color: #000000; /* Color de fondo del botón en naranja más oscuro */
+    color: #ffffff; /* Texto blanco para el botón */
+    padding: 10px 20px; /* Espacio dentro del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s; /* Transición suave al pasar el ratón */
+}
+
+.cta-button:hover {
+    background-color: #E65C00; /* Color de fondo del botón al pasar el ratón (más oscuro) */
+}
+
+/* Media Queries para Responsividad */
+
+/* Solo para dispositivos móviles (máximo 768px) */
+@media (max-width: 768px) {
+    .separator {
+        height: 120px; /* Reduce la altura para móviles */
+        padding: 10px; /* Menos padding en móviles */
+    }
+
+    .content-container {
+        flex-direction: column; /* Cambia la disposición a columna en móviles */
+        text-align: center; /* Centra el texto en dispositivos móviles */
+        width: 100%; /* Asegura que ocupe todo el ancho disponible */
+        justify-content: center; /* Centra los elementos verticalmente */
+    }
+
+    .content-container p {
+        margin-right: 0; /* Eliminar espacio a la derecha */
+        margin-bottom: 15px; /* Espacio entre el texto y el botón */
+        font-size: 18px; /* Aumentar el tamaño de la fuente en móviles */
+        text-align: center; /* Centrado en móviles */
+        width: 100%; /* Asegura que el texto ocupe el ancho completo */
+        line-height: 1.5; /* Mayor espacio entre las líneas para evitar apilamiento */
+    }
+
+    .cta-button {
+        font-size: 14px; /* Fuente más pequeña para el botón */
+        padding: 8px 15px; /* Menos padding en botones en móviles */
+    }
+}
+
+/* Solo para dispositivos de escritorio (PC) - a partir de 769px */
+@media (min-width: 769px) {
+    .separator {
+        height: 150px; /* Altura estándar en computadoras */
+    }
+
+    .content-container {
+        flex-direction: row; /* Mantiene los elementos en fila */
+        text-align: left; /* Mantiene el texto alineado a la izquierda */
+    }
+
+    .content-container p {
+        font-size: 18px; /* Fuente más grande para computadoras */
+        margin-right: 20px; /* Espacio adecuado entre texto y botón */
+    }
+
+    .cta-button {
+        font-size: 16px; /* Fuente de tamaño normal */
+        padding: 12px 25px; /* Padding más amplio para computadoras */
+    }
+}
