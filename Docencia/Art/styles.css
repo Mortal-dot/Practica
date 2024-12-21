@@ -772,3 +772,53 @@ body {
         margin-bottom: 20px; /* Separar la sección de proyectos del pie de página */
     }
 }
+
+/* Media Queries para Responsividad (para dispositivos móviles) */
+@media (max-width: 768px) {
+
+    /* Ajustar el tamaño de las imágenes de los proyectos */
+    .project-img {
+        width: 100%; /* Las imágenes ocupan el 100% del ancho disponible */
+        height: auto; /* Mantener la proporción de la imagen */
+        border-radius: 8px; /* Bordes redondeados para las imágenes */
+        object-fit: cover; /* Hace que las imágenes cubran el área disponible sin distorsión */
+    }
+
+    /* Asegurar que los elementos dentro de los proyectos se adapten bien */
+    .project-item {
+        padding: 15px; /* Añadir un poco de espacio dentro de cada proyecto */
+        background-color: #222; /* Fondo oscuro para cada proyecto */
+        border-radius: 8px; /* Bordes redondeados para cada item */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+        overflow: hidden; /* Asegura que las imágenes no sobresalgan del contenedor */
+    }
+
+    /* Ajustar la disposición de los proyectos en una columna */
+    .projects-grid {
+        grid-template-columns: 1fr; /* Mostrar una sola columna en móviles */
+        gap: 15px; /* Reducir el espacio entre los proyectos */
+        padding: 10px; /* Espaciado interno para la cuadrícula */
+    }
+
+    /* Títulos de los proyectos */
+    .project-item h3 {
+        font-size: 18px;  /* Reducir el tamaño del título */
+        text-align: center; /* Centrar los títulos */
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    /* Descripción de los proyectos */
+    .project-item p {
+        font-size: 14px;  /* Reducir el tamaño del texto */
+        line-height: 1.5;  /* Mejorar la legibilidad */
+        color: #ccc;  /* Color gris claro para el texto */
+        margin-bottom: 15px;
+    }
+
+    /* Asegurar que los enlaces se centren */
+    .project-item a {
+        display: block;
+        text-align: center;
+    }
+}
