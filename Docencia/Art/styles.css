@@ -691,134 +691,100 @@ body {
 .social-icon:hover {
     color: #007bff; /* Color al pasar el cursor */
 }
-
 /* Media Queries para dispositivos móviles */
 @media (max-width: 768px) {
-    .social-buttons {
-        justify-content: space-evenly; /* Distribuye los botones en el espacio disponible */
-    }
 
-    .social-icon {
-        font-size: 1.5rem; /* Disminuye el tamaño de los iconos en móviles */
-    }
-}
-
-@media (max-width: 480px) {
-    .social-buttons {
-        flex-direction: column; /* Cambia los botones a una columna en pantallas más pequeñas */
-        align-items: center; /* Centra los botones en la columna */
-    }
-
-    .social-icon {
-        font-size: 1.2rem; /* Aún más pequeño en dispositivos muy pequeños */
-        margin-bottom: 10px; /* Espacio entre los botones en la columna */
-    }
-}
-
-/* Media Queries para Responsividad (para dispositivos móviles) */
-@media (max-width: 768px) {
-
-    /* Títulos de los proyectos */
+    /* Ajustar el tamaño y espaciado del título de los proyectos */
     #projects h2 {
-        font-size: 24px;  /* Tamaño de fuente más pequeño */
+        font-size: 24px; /* Tamaño de fuente más pequeño */
         text-align: center; /* Centrar el título */
-        margin-bottom: 20px;
+        margin-bottom: 20px; /* Espacio debajo del título */
+        padding: 0 10px; /* Añadir algo de espacio a los lados */
     }
 
+    /* Ajustar el tamaño del título de cada proyecto */
     .project-item h3 {
-        font-size: 18px;  /* Tamaño de los encabezados de los proyectos */
-        text-align: center; /* Centrar los títulos de los proyectos */
-        margin-top: 15px;
-        margin-bottom: 10px;
+        font-size: 18px; /* Tamaño de los encabezados de los proyectos */
+        text-align: center; /* Centrar el título */
+        margin-top: 15px; /* Espacio superior */
+        margin-bottom: 10px; /* Espacio inferior */
     }
 
+    /* Descripción de los proyectos */
     .project-item p {
         font-size: 14px;  /* Tamaño de texto para la descripción */
-        line-height: 1.5;  /* Espaciado entre líneas para mayor legibilidad */
-        color: #ccc;  /* Color gris claro para las descripciones */
-        margin-bottom: 15px;
+        line-height: 1.6;  /* Aumentar el interlineado para mayor legibilidad */
+        color: #ccc;  /* Color gris claro */
+        margin-bottom: 20px; /* Espacio entre la descripción y la imagen */
+        padding: 0 10px; /* Añadir algo de espacio a los lados */
     }
 
     /* Ajustar el tamaño de las imágenes de los proyectos */
     .project-img {
-        width: 100%; /* Asegura que la imagen ocupe el 100% del contenedor */
-        height: auto; /* Mantiene la proporción de la imagen */
-        border-radius: 8px; /* Bordes redondeados */
+        width: 100%;  /* Ocupa el 100% del ancho disponible */
+        height: auto;  /* Mantiene la proporción de la imagen */
+        border-radius: 8px;  /* Bordes redondeados */
+        margin-bottom: 15px;  /* Espacio debajo de la imagen */
+        object-fit: cover;  /* Asegura que la imagen cubra el área sin distorsionarse */
     }
 
-    /* Hacer que los proyectos estén en una columna */
+    /* Ajustar la disposición de los proyectos en una columna */
     .projects-grid {
-        grid-template-columns: 1fr;  /* Una sola columna para los proyectos */
-        gap: 15px; /* Reduce el espacio entre los elementos */
-        padding: 10px; /* Espaciado dentro del grid */
+        grid-template-columns: 1fr;  /* Muestra los proyectos en una sola columna */
+        gap: 20px;  /* Espacio entre los proyectos */
+        padding: 10px;  /* Añadir espacio interno */
     }
 
-    /* Espaciado para los items de proyectos */
+    /* Estilo para cada item de proyecto */
     .project-item {
-        padding: 10px; /* Añadir algo de espacio dentro de cada item */
-        background-color: #222;  /* Fondo oscuro para cada item */
-        border-radius: 8px; /* Bordes redondeados */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+        padding: 15px;  /* Añadir espacio dentro de cada proyecto */
+        background-color: #222;  /* Fondo oscuro para cada proyecto */
+        border-radius: 8px;  /* Bordes redondeados */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+        overflow: hidden;  /* Ocultar cualquier contenido que sobresalga */
     }
 
     /* Espaciado para los enlaces */
     .project-item a {
         display: block;
-        text-align: center;
+        text-align: center;  /* Centrar los enlaces */
     }
 
-    /* Asegura que la lista de proyectos tenga márgenes adecuados */
+    /* Espaciado adecuado para la cuadrícula de proyectos */
     .projects-grid {
-        margin-bottom: 20px; /* Separar la sección de proyectos del pie de página */
+        margin-bottom: 20px;  /* Separar la sección de proyectos del pie de página */
+    }
+
+    /* Ajuste para los botones de redes sociales */
+    .social-buttons {
+        justify-content: space-evenly;  /* Distribuir los botones de manera uniforme */
+    }
+
+    .social-icon {
+        font-size: 1.5rem;  /* Reducir tamaño de los iconos */
     }
 }
 
-/* Media Queries para Responsividad (para dispositivos móviles) */
-@media (max-width: 768px) {
-
-    /* Ajustar el tamaño de las imágenes de los proyectos */
-    .project-img {
-        width: 100%; /* Las imágenes ocupan el 100% del ancho disponible */
-        height: auto; /* Mantener la proporción de la imagen */
-        border-radius: 8px; /* Bordes redondeados para las imágenes */
-        object-fit: cover; /* Hace que las imágenes cubran el área disponible sin distorsión */
+@media (max-width: 480px) {
+    .social-buttons {
+        flex-direction: column;  /* Cambiar la disposición a columna */
+        align-items: center;  /* Centrar los botones */
     }
 
-    /* Asegurar que los elementos dentro de los proyectos se adapten bien */
-    .project-item {
-        padding: 15px; /* Añadir un poco de espacio dentro de cada proyecto */
-        background-color: #222; /* Fondo oscuro para cada proyecto */
-        border-radius: 8px; /* Bordes redondeados para cada item */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-        overflow: hidden; /* Asegura que las imágenes no sobresalgan del contenedor */
+    .social-icon {
+        font-size: 1.2rem;  /* Hacer los iconos más pequeños */
+        margin-bottom: 10px;  /* Añadir espacio entre los iconos */
     }
 
-    /* Ajustar la disposición de los proyectos en una columna */
-    .projects-grid {
-        grid-template-columns: 1fr; /* Mostrar una sola columna en móviles */
-        gap: 15px; /* Reducir el espacio entre los proyectos */
-        padding: 10px; /* Espaciado interno para la cuadrícula */
-    }
-
-    /* Títulos de los proyectos */
+    /* Ajustes para los títulos de los proyectos */
     .project-item h3 {
-        font-size: 18px;  /* Reducir el tamaño del título */
-        text-align: center; /* Centrar los títulos */
-        margin-top: 15px;
-        margin-bottom: 10px;
+        font-size: 16px;  /* Reducir tamaño de los títulos */
     }
 
-    /* Descripción de los proyectos */
+    /* Descripciones de los proyectos */
     .project-item p {
-        font-size: 14px;  /* Reducir el tamaño del texto */
-        line-height: 1.5;  /* Mejorar la legibilidad */
-        color: #ccc;  /* Color gris claro para el texto */
-        margin-bottom: 15px;
-    }
-
-    /* Asegurar que los enlaces se centren */
-    .project-item a {
-        display: block;
-        text-align: center;
+        font-size: 13px;  /* Reducir el tamaño del texto */
+        line-height: 1.5;  /* Ajustar interlineado */
     }
 }
+
