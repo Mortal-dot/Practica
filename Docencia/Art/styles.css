@@ -717,13 +717,13 @@ body {
 
 /* Definir variables para colores y fuentes */
 :root {
-    --primary-color: #FF5722;
-    --secondary-color: #673AB7;
-    --font-family: 'Fira Code', monospace;
-    --font-size-large: 36px;
-    --font-size-medium: 30px;
-    --font-size-small: 24px;
-    --padding: 10px;
+    --primary-color: #FF5722; /* Color principal */
+    --secondary-color: #673AB7; /* Color secundario */
+    --font-family: 'Fira Code', monospace; /* Fuente */
+    --font-size-large: 36px; /* Tamaño grande */
+    --font-size-medium: 30px; /* Tamaño medio */
+    --font-size-small: 24px; /* Tamaño pequeño */
+    --padding: 10px; /* Relleno */
 }
 
 /* Restablecer márgenes y rellenos por defecto */
@@ -739,14 +739,14 @@ body {
 body {
     font-family: var(--font-family);
     line-height: 1.6;
-    background-color: #fff;
-    color: #333;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
 }
 
 /* Estilo para el contenido de la hero section */
 .hero-content h1,
 .hero-content h2 {
-    color: var(--primary-color);
+    color: var(--primary-color); /* Texto de los encabezados en color primario */
     margin-bottom: 20px;
 }
 
@@ -786,7 +786,7 @@ body {
 }
 
 .project-item {
-    background-color: #f9f9f9;
+    background-color: #222; /* Fondo oscuro para los proyectos */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -828,7 +828,7 @@ body {
 /* Estilos para las descripciones de proyectos */
 .project-description {
     font-size: 16px;
-    color: #666;
+    color: #ccc; /* Texto en gris claro */
     margin-top: 10px;
 }
 
