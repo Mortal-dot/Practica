@@ -624,3 +624,45 @@ p {
         padding: 0 10px; /* Ajusta el padding */
     }
 }
+
+/* Estilo general para la navegación */
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline-block; /* Los elementos estarán en línea */
+    margin-right: 15px; /* Espacio entre los elementos */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px; /* Tamaño de la fuente */
+    font-weight: bold;
+}
+
+/* Media Queries para Responsividad */
+
+/* Para dispositivos móviles (máximo 768px) */
+@media (max-width: 768px) {
+    header nav ul {
+        display: flex; /* Usamos flexbox para que los items estén en una línea */
+        justify-content: flex-start; /* Alinea los elementos a la izquierda */
+        padding: 10px; /* Relleno */
+        margin: 0;
+    }
+
+    header nav ul li {
+        display: block; /* Los elementos se mostrarán en bloque (uno debajo de otro) */
+        margin-right: 0; /* Elimino el margen entre elementos */
+        margin-bottom: 10px; /* Añadimos un margen en la parte inferior */
+    }
+
+    header nav ul li a {
+        font-size: 16px; /* Tamaño de texto más pequeño */
+        padding: 5px 0; /* Padding para dar espacio entre los enlaces */
+    }
+}
