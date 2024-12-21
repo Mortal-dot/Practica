@@ -834,51 +834,28 @@ body {
 
 /* Media Queries para Responsividad */
 
-/* Para dispositivos móviles */
+/* Solo para dispositivos móviles (máximo 768px) */
 @media (max-width: 768px) {
+    /* Estilos para la hero section en móviles */
     .hero-content h1 {
-        font-size: var(--font-size-small);
+        font-size: var(--font-size-small); /* Tamaño de texto pequeño */
     }
 
+    /* Estilos para los proyectos en grid en móviles */
     .projects-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Un solo elemento por fila */
     }
 
+    /* Estilos para los elementos de proyecto en móviles */
     .project-item {
         margin: 0;
         padding: 0;
         width: 100%;
     }
 
+    /* Estilos para el botón CTA en móviles */
     .cta-button {
-        font-size: 14px;
-        padding: var(--padding) 15px;
-    }
-}
-
-/* Para tablets */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .hero-content h1 {
-        font-size: var(--font-size-medium);
-    }
-
-    .cta-button {
-        font-size: 16px;
-        padding: var(--padding) 20px;
-    }
-}
-
-/* Para pantallas grandes */
-@media (min-width: 1024px) {
-    .hero-content h1 {
-        font-size: var(--font-size-large);
-    }
-
-    .projects-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .cta-button {
-        font-size: 18px;
+        font-size: 14px; /* Fuente más pequeña */
+        padding: var(--padding) 15px; /* Menos padding */
     }
 }
