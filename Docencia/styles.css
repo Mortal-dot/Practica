@@ -539,3 +539,88 @@ body {
         background-attachment: scroll; /* Cambiar a scroll para evitar problemas con móviles */
     }
 }
+
+/* Estilos generales para la sección */
+.hero-section {
+    position: relative; /* Establece el contexto para posicionar el contenido sobre la imagen */
+    width: 100%; /* Asegura que ocupe todo el ancho de la ventana */
+    height: 100vh; /* La sección ocupa todo el alto de la ventana */
+    overflow: hidden; /* Asegura que la imagen no se desborde fuera de la sección */
+}
+/* Estilo para la imagen */
+.image {
+    position: absolute; /* Permite que la imagen se coloque en el fondo */
+    top: 0;
+    left: 0;
+    width: 100%; /* La imagen ocupa todo el ancho */
+    height: 100%; /* La imagen ocupa todo el alto */
+    object-fit: cover; /* La imagen cubre toda el área sin distorsionarse */
+}
+/* Estilo del contenido sobre la imagen */
+.hero-content {
+    position: absolute; /* Posiciona el contenido sobre la imagen */
+    top: 50%; /* Posiciona el contenido en el centro verticalmente */
+    left: 50%; /* Posiciona el contenido en el centro horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para centrar perfectamente */
+    text-align: center; /* Alinea el texto al centro */
+    color: white; /* Cambia el color del texto para que sea visible sobre la imagen */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente para hacer el texto más legible */
+    padding: 20px; /* Espacio alrededor del texto */
+}
+/* Media query para pantallas móviles */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 1.5em; /* Reduce el tamaño del título en pantallas pequeñas */
+    }
+    .hero-content h2 {
+        font-size: 1.2em; /* Reduce el tamaño del subtítulo en pantallas pequeñas */
+    }
+    .hero-content h3 {
+        font-size: 1em; /* Reduce el tamaño del texto en pantallas pequeñas */
+    }
+}
+/* Estilos generales para la sección de publicidad */
+#publicidad {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Agrega espacio alrededor de la sección */
+}
+.icono {
+    width: 80px; /* Define un tamaño fijo para el icono */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-bottom: 10px; /* Agrega un pequeño espacio debajo del icono */
+}
+h3 {
+    font-size: 1.5em; /* Tamaño del título */
+    margin-bottom: 15px; /* Agrega espacio debajo del título */
+}
+p {
+    font-size: 1.1em; /* Tamaño del texto */
+    line-height: 1.5; /* Mejora la legibilidad con más espacio entre las líneas */
+    max-width: 700px; /* Limita el ancho del párrafo */
+    margin: 0 auto; /* Centra el párrafo */
+}
+/* Media queries para pantallas móviles */
+@media (max-width: 768px) {
+    .icono {
+        width: 60px; /* Reduce el tamaño del icono en pantallas más pequeñas */
+    }
+    h3 {
+        font-size: 1.2em; /* Reduce el tamaño del título en pantallas pequeñas */
+    }
+    p {
+        font-size: 1em; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+        padding: 0 15px; /* Agrega un pequeño padding a los lados para evitar que el texto quede pegado al borde */
+    }
+}
+@media (max-width: 480px) {
+    h3 {
+        font-size: 1em; /* Reduce aún más el tamaño del título en pantallas muy pequeñas */
+    }
+    p {
+        font-size: 0.9em; /* Ajusta aún más el tamaño del texto en pantallas pequeñas */
+        padding: 0 10px; /* Ajusta el padding */
+    }
+}
