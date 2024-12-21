@@ -297,6 +297,9 @@ nav ul li a {
     margin: 0; /* Eliminar márgenes */
     text-align: left; /* Alinear a la izquierda */
     margin-right: 20px; /* Espacio entre el párrafo y el botón */
+    white-space: nowrap; /* Evitar que el texto se divida en varias líneas (mantenerlo en una línea) */
+    overflow: hidden; /* Ocultar texto que sobrepase el contenedor */
+    text-overflow: ellipsis; /* Añadir puntos suspensivos si el texto es demasiado largo */
 }
 
 /* Estilo para el botón CTA */
@@ -322,6 +325,49 @@ nav ul li a {
         height: 120px; /* Reduce la altura para móviles */
         padding: 10px; /* Menos padding en móviles */
     }
+
+    .content-container {
+        flex-direction: column; /* Cambia la disposición a columna en móviles */
+        text-align: center; /* Centra el texto en dispositivos móviles */
+        width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    }
+
+    .content-container p {
+        margin-right: 0; /* Eliminar espacio a la derecha */
+        margin-bottom: 15px; /* Espacio entre el texto y el botón */
+        font-size: 18px; /* Aumentar el tamaño de la fuente en móviles */
+        text-align: center; /* Centrado en móviles */
+        width: 100%; /* Asegura que el texto ocupe el ancho completo */
+    }
+
+    .cta-button {
+        font-size: 14px; /* Fuente más pequeña para el botón */
+        padding: 8px 15px; /* Menos padding en botones en móviles */
+    }
+}
+
+/* Solo para dispositivos de escritorio (PC) - a partir de 769px */
+@media (min-width: 769px) {
+    .separator {
+        height: 150px; /* Altura estándar en computadoras */
+    }
+
+    .content-container {
+        flex-direction: row; /* Mantiene los elementos en fila */
+        text-align: left; /* Mantiene el texto alineado a la izquierda */
+    }
+
+    .content-container p {
+        font-size: 18px; /* Fuente más grande para computadoras */
+        margin-right: 20px; /* Espacio adecuado entre texto y botón */
+    }
+
+    .cta-button {
+        font-size: 16px; /* Fuente de tamaño normal */
+        padding: 12px 25px; /* Padding más amplio para computadoras */
+    }
+}
+
 
     .content-container {
         flex-direction: column; /* Cambia la disposición a columna en móviles */
