@@ -1086,3 +1086,96 @@ body {
         font-size: 1.3em; /* Reducir el tamaño de los títulos */
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo general para los contenedores */
+.container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    flex-direction: column; /* Coloca los elementos uno debajo del otro */
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+/* Estilo para los contenedores con imágenes y texto */
+.container img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho disponible */
+    max-width: 600px; /* Establece un ancho máximo para las imágenes */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+    margin-bottom: 20px; /* Añade espacio entre la imagen y el texto */
+}
+
+/* Estilo para los textos dentro del contenedor */
+.container p {
+    font-size: 1.4em; /* Aumenta el tamaño de la fuente para facilitar la lectura */
+    color: #333; /* Color del texto */
+    line-height: 1.6; /* Espaciado entre líneas para mayor legibilidad */
+    max-width: 800px; /* Limita el ancho máximo del texto */
+    margin: 0 auto; /* Centra el párrafo dentro del contenedor */
+    padding: 0 20px; /* Añade algo de espacio lateral */
+}
+
+/* Estilo para títulos */
+.container h1,
+.container h2,
+.container h3 {
+    font-size: 2.5em; /* Aumenta el tamaño de los títulos */
+    margin-bottom: 15px; /* Espacio debajo de los títulos */
+    color: #222; /* Color para los títulos */
+    font-weight: bold;
+}
+
+/* Estilos para dispositivos móviles y tabletas */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 15px; /* Reducir padding en pantallas pequeñas */
+    }
+
+    .container img {
+        max-width: 90%; /* La imagen se ajusta al 90% del ancho de la pantalla */
+    }
+
+    .container p {
+        font-size: 1.2em; /* Aumentar el tamaño de la fuente para mejorar la legibilidad */
+    }
+
+    .container h1,
+    .container h2,
+    .container h3 {
+        font-size: 2em; /* Ajustar el tamaño de los títulos */
+    }
+}
+
+/* Estilos para pantallas muy pequeñas (móviles) */
+@media screen and (max-width: 480px) {
+    .container img {
+        max-width: 100%; /* La imagen ocupa el 100% del ancho */
+    }
+
+    .container p {
+        font-size: 1.1em; /* Ajustar el tamaño de la fuente */
+        padding: 0 10px; /* Reducir el padding lateral */
+    }
+
+    .container h1,
+    .container h2,
+    .container h3 {
+        font-size: 1.7em; /* Ajustar el tamaño de los títulos */
+    }
+}
