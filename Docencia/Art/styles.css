@@ -1426,3 +1426,22 @@ body {
         font-size: 0.9em; /* Tamaño de fuente más pequeño para móviles */
     }
 }
+
+
+
+
+/* Estilo general para los contenedores (PC y dispositivos grandes) */
+.container {
+  width: 80%; /* Puedes ajustar el porcentaje según tus necesidades */
+  margin: 0 auto; /* Centra el contenedor */
+}
+
+/* Media query para dispositivos móviles (pantallas de hasta 768px de ancho) */
+@media (max-width: 768px) {
+  .container {
+    width: 100%; /* Hace que el contenedor ocupe todo el ancho en móviles */
+    padding-left: 20px; /* Puedes agregar espacio interno si lo deseas */
+    padding-right: 20px; /* Puedes agregar espacio interno si lo deseas */
+  }
+}
+
