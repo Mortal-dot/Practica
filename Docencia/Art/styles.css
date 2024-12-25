@@ -1349,3 +1349,80 @@ body {
         flex: 1 1 100%; /* En pantallas pequeñas, cada proyecto ocupa el 100% del ancho */
     }
 }
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    /* Estilos para dispositivos móviles */
+    
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 80px; /* Asegúrate de que la galería no se superponga al header */
+    }
+
+    /* Otros estilos existentes */
+    header {
+        padding: 10px 5px; /* Reduce el padding en móviles */
+    }
+
+    .navbar {
+        flex-direction: column; /* Cambia la dirección a columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+        padding: 10px; /* Reduce el padding */
+        text-align: center; /* Centra el texto dentro del navbar */
+    }
+
+    .navbar-left, .navbar-right {
+        flex-direction: column; /* Cambia la dirección a columna */
+        gap: 10px; /* Reduce el espacio entre los enlaces */
+        width: 100%; /* Asegura que ocupen todo el ancho */
+    }
+
+    .navbar-left a, .navbar-right a {
+        width: 100%; /* Cada enlace ocupa el 100% del ancho disponible */
+        text-align: center; /* Centra el texto de los enlaces */
+    }
+
+    .navbar-center {
+        padding: 15px 10px; /* Reduce el padding */
+        text-align: center; /* Centra el texto */
+    }
+
+    .gallery-item {
+        width: 100%; /* Cada galería ocupa el 100% en móviles */
+        height: auto; /* Altura automática para mantener proporción */
+    }
+
+    .footer-section {
+        width: 100%; /* Hace que las secciones del footer ocupen el 100% */
+        margin-bottom: 20px; /* Añade espacio entre las secciones */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Cambia la dirección a columna */
+        align-items: center; /* Centra las secciones */
+    }
+
+    .social-icons {
+        flex-direction: row; /* Alinea iconos en fila */
+        gap: 10px; /* Espacio más pequeño entre iconos */
+    }
+
+    .dropdown-img {
+        width: 100%; /* Ajusta el tamaño de la imagen */
+    }
+
+    .overlay h2 {
+        font-size: 1.2em; /* Tamaño de fuente más pequeño para móviles */
+    }
+
+    .overlay p {
+        font-size: 0.9em; /* Tamaño de fuente más pequeño para móviles */
+    }
+}
