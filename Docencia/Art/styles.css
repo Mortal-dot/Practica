@@ -1179,3 +1179,107 @@ body {
         font-size: 1.7em; /* Ajustar el tamaño de los títulos */
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos generales para la sección de proyectos */
+#projects {
+    padding: 50px 0;
+}
+
+/* Estilos para los elementos de proyecto (por ejemplo, tarjetas de proyectos) */
+#projects .project {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Ajustes para las imágenes dentro de los proyectos */
+#projects .project img {
+    width: 100%;
+    max-width: 400px; /* Evita que las imágenes se hagan demasiado grandes en pantallas grandes */
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+}
+
+/* Ajustes para los títulos y descripciones dentro de los proyectos */
+#projects .project h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+#projects .project p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* Media query para dispositivos móviles (máximo 768px) */
+@media screen and (max-width: 768px) {
+    #projects {
+        padding: 30px 0; /* Reducir el padding en pantallas pequeñas */
+    }
+
+    /* Hacer que los proyectos se apilen en lugar de estar en fila */
+    #projects .project {
+        display: block; /* Asegura que cada proyecto esté en una fila */
+        margin-bottom: 20px; /* Reducir el espacio entre los proyectos */
+    }
+
+    /* Ajustes para las imágenes dentro de los proyectos */
+    #projects .project img {
+        max-width: 90%; /* La imagen ocupa el 90% del ancho disponible */
+    }
+
+    /* Reducir el tamaño de los títulos y el texto */
+    #projects .project h3 {
+        font-size: 1.5em; /* Ajustar el tamaño de los títulos */
+    }
+
+    #projects .project p {
+        font-size: 1em; /* Reducir el tamaño de la fuente en dispositivos pequeños */
+        max-width: 90%; /* Asegura que el texto no sea demasiado largo */
+    }
+}
+
+/* Media query para dispositivos muy pequeños (móviles) */
+@media screen and (max-width: 480px) {
+    #projects {
+        padding: 20px 0; /* Asegura que haya menos espacio en pantallas muy pequeñas */
+    }
+
+    #projects .project img {
+        max-width: 100%; /* La imagen ocupa todo el ancho disponible */
+    }
+
+    #projects .project h3 {
+        font-size: 1.3em; /* Ajustar aún más el tamaño de los títulos */
+    }
+
+    #projects .project p {
+        font-size: 0.9em; /* Reducir un poco más el tamaño de la fuente */
+    }
+}
