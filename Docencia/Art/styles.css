@@ -1231,10 +1231,11 @@ body {
 
 #projects .project p {
     font-size: 1.1em;
-    line-height: 1.6;
+    line-height: 1.6; /* Aumenta el espaciado entre las líneas para mejorar la legibilidad */
     color: #333;
     max-width: 80%;
     margin: 0 auto;
+    word-wrap: break-word; /* Asegura que las palabras largas se dividan correctamente */
 }
 
 /* Media query para dispositivos móviles (máximo 768px) */
@@ -1260,8 +1261,10 @@ body {
     }
 
     #projects .project p {
-        font-size: 1em; /* Reducir el tamaño de la fuente en dispositivos pequeños */
+        font-size: 1.2em; /* Aumentar el tamaño de la fuente para mejorar la legibilidad */
+        line-height: 1.5; /* Reducir un poco el espaciado entre las líneas */
         max-width: 90%; /* Asegura que el texto no sea demasiado largo */
+        margin: 0 auto;
     }
 }
 
@@ -1280,6 +1283,8 @@ body {
     }
 
     #projects .project p {
-        font-size: 0.9em; /* Reducir un poco más el tamaño de la fuente */
+        font-size: 1.1em; /* Ajustar el tamaño de la fuente */
+        line-height: 1.4; /* Mejorar el espaciado entre líneas */
+        padding: 0 10px; /* Reducir el padding lateral */
     }
 }
