@@ -1288,3 +1288,64 @@ body {
         padding: 0 10px; /* Reducir el padding lateral */
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contenedor principal de proyectos */
+.projects-container {
+    display: flex; /* Usa flexbox para organizar los elementos de forma más controlada */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a nuevas filas si es necesario */
+    justify-content: space-between; /* Espacio uniforme entre los elementos */
+    gap: 20px; /* Espacio entre los proyectos */
+    padding: 20px; /* Padding alrededor del contenedor */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total del contenedor */
+}
+
+/* Estilo para cada proyecto */
+.project {
+    flex: 1 1 calc(33.33% - 20px); /* Cada proyecto ocupa un 33.33% del ancho del contenedor, menos el espacio entre ellos */
+    box-sizing: border-box; /* Asegura que el padding y border no afecten el tamaño */
+    margin-bottom: 20px; /* Espacio en la parte inferior de cada proyecto */
+    background-color: #f4f4f4; /* Color de fondo de los proyectos */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px; /* Padding dentro de cada proyecto */
+    transition: transform 0.3s ease-in-out; /* Transición para efectos de hover */
+}
+
+/* Efecto de hover para los proyectos */
+.project:hover {
+    transform: scale(1.05); /* Un ligero aumento de tamaño cuando pasas el ratón por encima */
+}
+
+/* Responsividad: para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .project {
+        flex: 1 1 calc(50% - 20px); /* En pantallas medianas, cada proyecto ocupa el 50% del ancho */
+    }
+}
+
+@media (max-width: 480px) {
+    .project {
+        flex: 1 1 100%; /* En pantallas pequeñas, cada proyecto ocupa el 100% del ancho */
+    }
+}
